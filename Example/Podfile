@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MKScannerCommonModule_Example' do
+  pod 'MKScannerCommonModule', :path => '../'
+
+  target 'MKScannerCommonModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
