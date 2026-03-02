@@ -13,7 +13,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MKAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MKViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -21,8 +20,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		7BC292A710FD70BED3C5BBD4 /* Pods_MKScannerCommonModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB09FEE39EA9B20E77FD1FA /* Pods_MKScannerCommonModule_Tests.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		EC521123DB7332E408E0E52E /* Pods_MKScannerCommonModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA10BC868618DE5F9E29BA /* Pods_MKScannerCommonModule_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22BE9CF998B47583631145E9 /* Pods-MKScannerCommonModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKScannerCommonModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-MKScannerCommonModule_Tests/Pods-MKScannerCommonModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3CB09FEE39EA9B20E77FD1FA /* Pods_MKScannerCommonModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKScannerCommonModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AA10BC868618DE5F9E29BA /* Pods_MKScannerCommonModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKScannerCommonModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MKScannerCommonModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKScannerCommonModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +45,6 @@
 		6003F59B195388D20070C39A /* MKScannerCommonModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKScannerCommonModule-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* MKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* MKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* MKScannerCommonModule_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKScannerCommonModule_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,12 +54,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6621FA1E75640E402AC65D69 /* Pods-MKScannerCommonModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKScannerCommonModule_Example.release.xcconfig"; path = "Target Support Files/Pods-MKScannerCommonModule_Example/Pods-MKScannerCommonModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7182D5CBB64DA4E2C5D3F254 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7D0F3851F2AE0921EF0353A7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AA21DBB8BC32402A8060B770 /* Pods-MKScannerCommonModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKScannerCommonModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MKScannerCommonModule_Tests/Pods-MKScannerCommonModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7182D5CBB64DA4E2C5D3F254 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7D0F3851F2AE0921EF0353A7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D187353F272C446EA4CC571F /* Pods-MKScannerCommonModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKScannerCommonModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-MKScannerCommonModule_Example/Pods-MKScannerCommonModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F91628865B388C91938EE560 /* MKScannerCommonModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MKScannerCommonModule.podspec; path = ../MKScannerCommonModule.podspec; sourceTree = "<group>"; };
+		F91628865B388C91938EE560 /* MKScannerCommonModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MKScannerCommonModule.podspec; path = ../MKScannerCommonModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,22 +79,25 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				7BC292A710FD70BED3C5BBD4 /* Pods_MKScannerCommonModule_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A678E32F4FE0A800CF76FF /* Fuctions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fuctions;
+			sourceTree = "<group>";
+		};
 		514FC2430449875ABA3CC026 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				D187353F272C446EA4CC571F /* Pods-MKScannerCommonModule_Example.debug.xcconfig */,
 				6621FA1E75640E402AC65D69 /* Pods-MKScannerCommonModule_Example.release.xcconfig */,
-				AA21DBB8BC32402A8060B770 /* Pods-MKScannerCommonModule_Tests.debug.xcconfig */,
-				22BE9CF998B47583631145E9 /* Pods-MKScannerCommonModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,7 +130,6 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				42AA10BC868618DE5F9E29BA /* Pods_MKScannerCommonModule_Example.framework */,
-				3CB09FEE39EA9B20E77FD1FA /* Pods_MKScannerCommonModule_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,11 +137,9 @@
 		6003F593195388D20070C39A /* Example for MKScannerCommonModule */ = {
 			isa = PBXGroup;
 			children = (
+				00A678E32F4FE0A800CF76FF /* Fuctions */,
 				6003F59C195388D20070C39A /* MKAppDelegate.h */,
 				6003F59D195388D20070C39A /* MKAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* MKViewController.h */,
-				6003F5A6195388D20070C39A /* MKViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -223,7 +214,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MKScannerCommonModule_Tests" */;
 			buildPhases = (
-				3F16BA1194906912B1CD26FF /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -244,10 +234,13 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MK;
+				CLASSPREFIX = MKScanner;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lovexiaoxia;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = R558LEUW2T;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +251,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,7 +271,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -295,28 +288,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F16BA1194906912B1CD26FF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MKScannerCommonModule_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		79B31426CB07439E9C96539C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,11 +317,31 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MKScannerCommonModule_Example/Pods-MKScannerCommonModule_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CircleProgressBar/CircleProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MKBaseModuleLibrary/MKBaseModuleLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/MKCustomUIModule/MKCustomUIModule.framework",
 				"${BUILT_PRODUCTS_DIR}/MKScannerCommonModule/MKScannerCommonModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MLInputDodger/MLInputDodger.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/WRNavigationBar/WRNavigationBar.framework",
+				"${BUILT_PRODUCTS_DIR}/libxlsxwriter/xlsxwriter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKBaseModuleLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKCustomUIModule.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKScannerCommonModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLInputDodger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRNavigationBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xlsxwriter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,7 +356,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* MKViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,9 +484,12 @@
 			baseConfigurationReference = D187353F272C446EA4CC571F /* Pods-MKScannerCommonModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2026022501;
+				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKScannerCommonModule/MKScannerCommonModule-Prefix.pch";
 				INFOPLIST_FILE = "MKScannerCommonModule/MKScannerCommonModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +503,12 @@
 			baseConfigurationReference = 6621FA1E75640E402AC65D69 /* Pods-MKScannerCommonModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2026022501;
+				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKScannerCommonModule/MKScannerCommonModule-Prefix.pch";
 				INFOPLIST_FILE = "MKScannerCommonModule/MKScannerCommonModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,7 +519,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA21DBB8BC32402A8060B770 /* Pods-MKScannerCommonModule_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -548,7 +543,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22BE9CF998B47583631145E9 /* Pods-MKScannerCommonModule_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
