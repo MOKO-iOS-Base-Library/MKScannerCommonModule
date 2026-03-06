@@ -48,7 +48,6 @@ TODO: Add long description of the pod here.
     ss.subspec 'ImportServerPage' do |sss|
       sss.subspec 'Controller' do |ssss|
         ssss.source_files = 'MKScannerCommonModule/Classes/Expand/ImportServerPage/Controller/**'
-        ssss.dependency 'MKScannerCommonModule/Expand/ExcelManager'
       end
     end
     
@@ -243,9 +242,6 @@ TODO: Add long description of the pod here.
           sssss.source_files = 'MKScannerCommonModule/Classes/BleModule/Pages/ServerForDevicePage/Controller/**'
           sssss.dependency 'MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Protocol'
           sssss.dependency 'MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/View'
-          sssss.dependency 'MKScannerCommonModule/Expand/ExcelManager'
-          sssss.dependency 'MKScannerCommonModule/Expand/ImportServerPage'
-          sssss.dependency 'MKScannerCommonModule/Expand/View/AlertView'
         end
       end
     end
@@ -255,18 +251,17 @@ TODO: Add long description of the pod here.
   # MQTT模块
   # ==========================================================
   s.subspec 'MQTTModule' do |ss|
+    ss.dependency 'MKScannerCommonModule/Expand'
     
     # MQTT管理器
     ss.subspec 'Manager' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Manager/**'
-      sss.dependency 'MKScannerCommonModule/DeviceModel'
     end
     
     # MQTT基础控制器
     ss.subspec 'BaseController' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/BaseController/**'
       sss.dependency 'MKScannerCommonModule/MQTTModule/Manager'
-      sss.dependency 'MKScannerCommonModule/Expand/View/AlertView'
     end
     
     # MQTT页面
@@ -313,9 +308,6 @@ TODO: Add long description of the pod here.
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByAdvNamePage/Controller/**'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol'
-            ssssss.dependency 'MKScannerCommonModule/Expand/View/AdvNormalCell'
-            ssssss.dependency 'MKScannerCommonModule/Expand/View/AdvTriggerCell'
-            ssssss.dependency 'MKScannerCommonModule/Expand/View/AdvTriggerTwoStateCell'
           end
         end
         
@@ -481,7 +473,6 @@ TODO: Add long description of the pod here.
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol'
-              sssssss.dependency 'MKScannerCommonModule/Expand/View/BXPButtonAccHeaderView'
             end
           end
           
@@ -520,7 +511,6 @@ TODO: Add long description of the pod here.
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol'
-              sssssss.dependency 'MKScannerCommonModule/Expand/View/BXPAdvParamsCell'
             end
           end
           
@@ -533,7 +523,6 @@ TODO: Add long description of the pod here.
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol'
-              sssssss.dependency 'MKScannerCommonModule/Expand/View/BXPAdvParamsCell'
             end
           end
           
@@ -546,7 +535,6 @@ TODO: Add long description of the pod here.
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol'
-              sssssss.dependency 'MKScannerCommonModule/Expand/View/RemoteReminderCell'
             end
           end
           
@@ -576,7 +564,6 @@ TODO: Add long description of the pod here.
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol'
-              sssssss.dependency 'MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView'
             end
           end
           
@@ -594,7 +581,6 @@ TODO: Add long description of the pod here.
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model'
-              sssssss.dependency 'MKScannerCommonModule/Expand/View/RemoteReminderCell'
             end
           end
           
@@ -684,7 +670,6 @@ TODO: Add long description of the pod here.
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView'
               end
             end
           end
@@ -751,7 +736,6 @@ TODO: Add long description of the pod here.
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView'
               end
             end
             
