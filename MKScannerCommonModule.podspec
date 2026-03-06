@@ -9,10 +9,12 @@
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
   s.version          = '0.0.1'
-  s.summary          = 'A short description of MKScannerCommonModule.'
+  s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  MKScannerCommonModule provides a comprehensive set of reusable components for scanning,
+  managing, and configuring BLE and MQTT devices. It includes filter pages, device info pages,
+  nearby WiFi scanning, and various BXP device management features.
                        DESC
 
   s.homepage         = 'https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule'
@@ -21,6 +23,16 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
+  s.static_framework = true
+  
+  # 修复 libarclite 缺失问题
+  s.pod_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => '14.0',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => '14.0'
+  }
   
   # 资源文件
   s.resource_bundles = {
@@ -42,6 +54,7 @@ TODO: Add long description of the pod here.
     # Excel管理
     ss.subspec 'ExcelManager' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/Expand/ExcelManager/**'
+      sss.dependency 'SSZipArchive'
     end
     
     # 导入服务器页面
@@ -149,7 +162,6 @@ TODO: Add long description of the pod here.
     # 蓝牙基础控制器
     ss.subspec 'BaseController' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/BleModule/BaseController/**'
-      s
     end
     
     # 蓝牙页面
@@ -252,6 +264,7 @@ TODO: Add long description of the pod here.
   # ==========================================================
   s.subspec 'MQTTModule' do |ss|
     ss.dependency 'MKScannerCommonModule/Expand'
+    ss.dependency 'MKScannerCommonModule/DeviceModel'
     
     # MQTT管理器
     ss.subspec 'Manager' do |sss|
@@ -1053,7 +1066,5 @@ TODO: Add long description of the pod here.
         end
       end
     end
-    
-    ss.dependency 'MKScannerCommonModule/DeviceModel'
   end
 end
