@@ -112,11 +112,6 @@ TODO: Add long description of the pod here.
         ssss.source_files = 'MKScannerCommonModule/Classes/Expand/View/ManagerBleDeviceView/**'
       end
       
-      # 扫描过滤器Cell
-      sss.subspec 'MKScannerFilterCell' do |ssss|
-        ssss.source_files = 'MKScannerCommonModule/Classes/Expand/View/MKScannerFilterCell/**'
-      end
-      
       # 按键事件计数Cell
       sss.subspec 'PressEventCountCell' do |ssss|
         ssss.source_files = 'MKScannerCommonModule/Classes/Expand/View/PressEventCountCell/**'
