@@ -113,9 +113,6 @@ MKTextFieldCellDelegate>
 #pragma mark - dfu
 
 - (void)receiveDfuProgress:(NSString *)bleMac percent:(NSString *)percent {
-    if (![self.protocol.bleMac isEqualToString:bleMac]) {
-        return;
-    }
     if (self.receiveComplete) {
         return;
     }
@@ -125,9 +122,6 @@ MKTextFieldCellDelegate>
 }
 
 - (void)receiveDfuResult:(NSString *)bleMac resultCode:(NSInteger)resultCode {
-    if (![self.protocol.bleMac isEqualToString:bleMac]) {
-        return;
-    }
     [[MKHudManager share] hide];
     self.receiveComplete = YES;
     self.progressLabel.hidden = YES;
@@ -177,9 +171,7 @@ MKTextFieldCellDelegate>
     };
     self.protocol.deviceDisconnectBlock = ^(NSString * _Nonnull gatewayMacAddress, NSString * _Nonnull deviceMacAddress) {
         @strongify(self);
-        if ([self.protocol.bleMac isEqualToString:deviceMacAddress]) {
-            [self gotoLastPage];
-        }
+        [self gotoLastPage];
     };
 }
 

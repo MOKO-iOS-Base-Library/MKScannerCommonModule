@@ -150,18 +150,12 @@ TODO: Add long description of the pod here.
   # 蓝牙模块
   # ==========================================================
   s.subspec 'BleModule' do |ss|
-    
-    # 蓝牙管理器
-    ss.subspec 'Manager' do |sss|
-      sss.source_files = 'MKScannerCommonModule/Classes/BleModule/Manager/**'
-      sss.dependency 'MKScannerCommonModule/DeviceModel'
-    end
+    ss.dependency 'MKScannerCommonModule/Expand'
     
     # 蓝牙基础控制器
     ss.subspec 'BaseController' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/BleModule/BaseController/**'
-      sss.dependency 'MKScannerCommonModule/BleModule/Manager'
-      sss.dependency 'MKScannerCommonModule/Expand/View/AlertView'
+      s
     end
     
     # 蓝牙页面
@@ -184,8 +178,13 @@ TODO: Add long description of the pod here.
       
       # 设备信息页面
       sss.subspec 'DeviceInfoPage' do |ssss|
+        ssss.subspec 'Model' do |sssss|
+          sssss.source_files = 'MKScannerCommonModule/Classes/BleModule/Pages/DeviceInfoPage/Model/**'
+        end
+        
         ssss.subspec 'Protocol' do |sssss|
           sssss.source_files = 'MKScannerCommonModule/Classes/BleModule/Pages/DeviceInfoPage/Protocol/**'
+          sssss.dependency 'MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model'
         end
         
         ssss.subspec 'Controller' do |sssss|
@@ -959,8 +958,13 @@ TODO: Add long description of the pod here.
         
         # 设备信息页面
         ssss.subspec 'DeviceInfoPage' do |sssss|
+          sssss.subspec 'Model' do |ssssss|
+            ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/DeviceInfoPage/Model/**'
+          end
+          
           sssss.subspec 'Protocol' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol/**'
+            ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model'
           end
           
           sssss.subspec 'Controller' do |ssssss|

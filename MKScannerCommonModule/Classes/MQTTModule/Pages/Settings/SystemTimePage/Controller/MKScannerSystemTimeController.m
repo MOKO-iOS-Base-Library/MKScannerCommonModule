@@ -99,7 +99,7 @@ MKTextButtonCellDelegate>
         //Sync Time From NTP
         id <MKScannerNTPServerProtocol>ntpProtocol = [self.protocol ntpServerProtocol];
         if (ntpProtocol) {
-            MKScannerNTPServerController *vc = [[MKScannerNTPServerController alloc] init];
+            MKScannerNTPServerController *vc = [[MKScannerNTPServerController alloc] initWithProtocol:ntpProtocol];
             [self.navigationController pushViewController:vc animated:YES];
         } else {
             [self.view showCentralToast:@"Get ntp server protocol failed"];
@@ -172,7 +172,7 @@ MKTextButtonCellDelegate>
     [self.protocol readUTCTimeDataWithSucBlock:^(NSDictionary * _Nonnull dic) {
         @strongify(self);
         [[MKHudManager share] hide];
-        [self updateCellData:dic];
+        [self updateCellData:dic[@"data"]];
     }
                                    failedBlock:^(NSError * _Nonnull error) {
         @strongify(self);

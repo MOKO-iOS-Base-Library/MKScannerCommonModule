@@ -149,6 +149,7 @@ MKScannerHistoricalTHDataHeaderViewDelegate>
     @weakify(self);
     self.protocol.receiveHTDataBlock = ^(long long timestamp, float temperature, float humidity) {
         @strongify(self);
+        [self receiveHTDatas:timestamp temperature:temperature humidity:humidity];
     };
 }
 - (void)receiveHTDatas:(long long)timestamp

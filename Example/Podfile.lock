@@ -483,6 +483,7 @@ PODS:
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Controller (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model (= 0.0.1)
     - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol (= 0.0.1)
     - MLInputDodger
   - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Controller (0.0.1):
@@ -493,12 +494,20 @@ PODS:
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol
     - MLInputDodger
+  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model (0.0.1):
+    - Masonry
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKScannerCommonModule/BleModule/BaseController
+    - MLInputDodger
   - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol (0.0.1):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model
     - MLInputDodger
   - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage (0.0.1):
     - Masonry
@@ -2495,6 +2504,7 @@ PODS:
     - MKScannerCommonModule/DeviceModel
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Controller (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model (= 0.0.1)
     - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol (= 0.0.1)
     - MLInputDodger
   - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Controller (0.0.1):
@@ -2506,6 +2516,14 @@ PODS:
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol
     - MLInputDodger
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model (0.0.1):
+    - Masonry
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/MQTTModule/BaseController
+    - MLInputDodger
   - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol (0.0.1):
     - Masonry
     - MJRefresh
@@ -2513,6 +2531,7 @@ PODS:
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
     - MKScannerCommonModule/MQTTModule/BaseController
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model
     - MLInputDodger
   - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage (0.0.1):
     - Masonry
@@ -2766,7 +2785,7 @@ SPEC CHECKSUMS:
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   MKBaseModuleLibrary: 2b79bcae588c755588413fbb643b510253271b23
   MKCustomUIModule: 8426eba1d3178b06d92741d31da32502920fb8fa
-  MKScannerCommonModule: 498303b8fa2178a093d600f8e9b9274b59274934
+  MKScannerCommonModule: 6007a2fd0b766ab27db75404ad3a472b80c8a3f4
   MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e

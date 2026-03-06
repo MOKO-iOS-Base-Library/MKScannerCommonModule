@@ -126,7 +126,7 @@ MKScannerBXPAdvParamsCellDelegate>
 
 #pragma mark - loadSectionDatas
 - (void)loadSectionDatas:(NSArray *)list {
-    for (NSInteger i = 0; i < list; i ++) {
+    for (NSInteger i = 0; i < list.count; i ++) {
         NSDictionary *dic = list[i];
         MKScannerBXPAdvParamsCellModel *cellModel = [[MKScannerBXPAdvParamsCellModel alloc] init];
         cellModel.slotIndex = [dic[@"channel"] integerValue];
@@ -134,7 +134,7 @@ MKScannerBXPAdvParamsCellDelegate>
         cellModel.slotType = slotType;
         if (slotType != MKScannerBXPAdvParamsCellSlotTypeNoData) {
             cellModel.triggerType = [dic[@"trigger_type"] integerValue];
-            cellModel.interval = [NSString stringWithFormat:@"%ld",(long)([dic[@"adv_interval"] integerValue] / 100)];
+            cellModel.interval = [NSString stringWithFormat:@"%ld",(long)([dic[@"adv_interval"] integerValue] / (self.protocol.multiples > 0 ? self.protocol.multiples : 1))];
             cellModel.txPower = [self fetchTxPower:[dic[@"tx_power"] integerValue]];
         }
         [self.dataList addObject:cellModel];

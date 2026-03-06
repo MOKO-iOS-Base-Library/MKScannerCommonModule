@@ -336,6 +336,9 @@ MKTextButtonCellDelegate>
 - (NSInteger)loadFilterRelationshipIndex {
     if (self.section1List.count == 2) {
         //@[@"A & B",@"A | B"]
+        if (self.protocol.relationship == 1) {
+            return 0;
+        }
         //当前设备为A | B
         return 1;
     }

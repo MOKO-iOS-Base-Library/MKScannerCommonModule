@@ -10,8 +10,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 监听实时的温湿度数据
 - (void)notifyRealTimeHTData:(BOOL)isOn
-                sucBlock:(void (^)(void))sucBlock
-            failedBlock:(void (^)(NSError *error))failedBlock;
+                    sucBlock:(void (^)(void))sucBlock
+                 failedBlock:(void (^)(NSError *error))failedBlock;
 
 @end
 

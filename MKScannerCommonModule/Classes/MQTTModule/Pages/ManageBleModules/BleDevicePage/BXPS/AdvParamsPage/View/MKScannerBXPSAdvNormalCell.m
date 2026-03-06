@@ -139,6 +139,7 @@
 }
 
 - (void)txPowerButtonPressed {
+    [self.intervalField resignFirstResponder];
     NSInteger index = 0;
     for (NSInteger i = 0; i < self.txPowerList.count; i ++) {
         if ([self.txPowerBtn.titleLabel.text isEqualToString:self.txPowerList[i]]) {

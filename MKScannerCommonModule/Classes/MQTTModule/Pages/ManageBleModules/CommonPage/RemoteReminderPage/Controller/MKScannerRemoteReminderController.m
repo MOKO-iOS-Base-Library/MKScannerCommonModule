@@ -220,10 +220,10 @@ MKScannerRemoteReminderCellDelegate>
         return self.section3List.count;
     }
     if (section == 4) {
-        return self.section4List.count;
+        return (self.protocol.supportVibarate ? self.section4List.count : 0);
     }
     if (section == 5) {
-        return self.section5List.count;
+        return (self.protocol.supportVibarate ? self.section5List.count : 0);
     }
     return 0;
 }

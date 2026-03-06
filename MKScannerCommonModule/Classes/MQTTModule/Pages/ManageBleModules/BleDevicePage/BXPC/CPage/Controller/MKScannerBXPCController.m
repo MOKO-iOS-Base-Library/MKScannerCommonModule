@@ -251,6 +251,7 @@ MKScannerButtonFirmwareCellDelegate>
         //DFU
         id <MKScannerButtonDfuV2Protocol>protocol = self.protocol.dfuProtocol;
         if (protocol) {
+            protocol.type = 3;
             MKScannerButtonDfuV2Controller *vc = [[MKScannerButtonDfuV2Controller alloc] initWithProtocol:protocol];
             [self.navigationController pushViewController:vc animated:YES];
         } else {

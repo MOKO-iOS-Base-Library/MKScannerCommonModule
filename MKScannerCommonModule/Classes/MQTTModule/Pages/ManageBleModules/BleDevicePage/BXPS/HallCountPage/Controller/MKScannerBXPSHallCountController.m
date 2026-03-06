@@ -76,6 +76,7 @@ MKScannerPressEventCountCellDelegate>
     [self.protocol clearHallCountWithSucBlock:^{
         @strongify(self);
         [[MKHudManager share] hide];
+        [self.view showCentralToast:@"Success"];
         MKScannerPressEventCountCellModel *cellModel = self.dataList[0];
         cellModel.count = @"0";
         [self.tableView reloadData];

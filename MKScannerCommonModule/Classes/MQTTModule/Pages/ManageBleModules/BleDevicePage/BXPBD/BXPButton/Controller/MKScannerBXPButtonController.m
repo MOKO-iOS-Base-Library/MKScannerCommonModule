@@ -303,6 +303,7 @@ MKScannerPressEventCountCellDelegate>
         if (self.protocol.isV2) {
             id <MKScannerButtonDfuV2Protocol>protocol = self.protocol.dfuProtocol2;
             if (protocol) {
+                protocol.type = 1;
                 MKScannerButtonDfuV2Controller *vc = [[MKScannerButtonDfuV2Controller alloc] initWithProtocol:protocol];
                 [self.navigationController pushViewController:vc animated:YES];
             } else {

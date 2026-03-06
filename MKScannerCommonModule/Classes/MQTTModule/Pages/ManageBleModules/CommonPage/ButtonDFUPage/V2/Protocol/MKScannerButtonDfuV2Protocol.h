@@ -12,9 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设备跟当前网关断开连接了，gatewayMacAddress当前网关设备的mac,deviceMacAddress当前网关连接的设备的mac
 @property (nonatomic, copy)void (^deviceDisconnectBlock)(NSString *gatewayMacAddress, NSString *deviceMacAddress);
 
-/// 当前网关连接的蓝牙设备的mac
-@property (nonatomic, copy)NSString *bleMac;
-
 @property (nonatomic, copy)NSString *firmwareUrl;
 
 @property (nonatomic, copy)NSString *dataUrl;
@@ -22,7 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 1:BXP-B-D   2:BXP-B-CR  3:BXP-C 4:BXP-D 5:BXP-TAG   6:BXP-S 7:PIR   8:TOF
 @property (nonatomic, assign)NSInteger type;
 
-- (void)configDataWithSucBlock:(void (^)(void))sucBlock failedBlock:(void (^)(NSError *error))failedBlock;
+- (void)configDataWithSucBlock:(void (^)(void))sucBlock
+                   failedBlock:(void (^)(NSError *error))failedBlock;
 
 @end
 

@@ -10,11 +10,20 @@
 
 #import "MKMacroDefines.h"
 
+NSString *const mk_scanner_deviceOfflineNotification = @"mk_scanner_deviceOfflineNotification";
+NSString *const mk_scanner_deviceLoadChangedNotification = @"mk_scanner_deviceLoadChangedNotification";
 
 static MKScannerMQTTModuleManager *manager = nil;
 static dispatch_once_t onceToken;
 
 @implementation MKScannerMQTTModuleManager
+
+- (instancetype)init {
+    if (self = [super init]) {
+        [self setupBlocks];
+    }
+    return self;
+}
 
 + (MKScannerMQTTModuleManager *)shared {
     dispatch_once(&onceToken, ^{
@@ -28,6 +37,23 @@ static dispatch_once_t onceToken;
 + (void)sharedDealloc {
     manager = nil;
     onceToken = 0;
+}
+
+#pragma mark - Public method
+- (void)setupBlocks {
+    @weakify(self);
+    self.deviceOfflineBlock = ^{
+        @strongify(self);
+        [[NSNotificationCenter  defaultCenter] postNotificationName:mk_scanner_deviceOfflineNotification
+                                                             object:nil
+                                                           userInfo:nil];
+    };
+    self.loadChangedBlock = ^(NSInteger state) {
+        @strongify(self);
+        [[NSNotificationCenter  defaultCenter] postNotificationName:mk_scanner_deviceLoadChangedNotification
+                                                             object:nil
+                                                           userInfo:@{@"state":@(state)}];
+    };
 }
 
 @end

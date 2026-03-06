@@ -11,8 +11,6 @@
 #import "MKMacroDefines.h"
 #import "UIView+MKAdd.h"
 
-#import "MKScannerBleModuleManager.h"
-
 @interface MKScannerBleBaseController ()
 
 @end
@@ -27,23 +25,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(deviceConnectStateChanged)
-                                                 name:[MKScannerBleModuleManager shared].peripheralConnectStateChangedNotification
+                                             selector:@selector(disconnect)
+                                                 name:@"mk_scanner_peripheralDisconnectNotification"
                                                object:nil];
 }
 
 #pragma mark - note
-- (void)deviceConnectStateChanged {
+- (void)disconnect {
     if (![MKBaseViewController isCurrentViewControllerVisible:self]) {
         return;
     }
     [self.view showCentralToast:@"Device disconnect!"];
-    [self performSelector:@selector(gotoScanPage) withObject:nil afterDelay:0.5f];
-}
-
-#pragma mark - private method
-- (void)gotoScanPage {
-    [self popToViewControllerWithClassName:[MKScannerBleModuleManager shared].scanPageClassName];
 }
 
 @end

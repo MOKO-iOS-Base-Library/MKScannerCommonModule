@@ -1,7 +1,6 @@
 
 #import "MKScannerButtonDfuV2Protocol.h"
 #import "MKScannerBXPDAccParamsProtocol.h"
-#import "MKScannerBXPButtonCRAlarmEventProtocol.h"
 #import "MKScannerAccDataProtocol.h"
 #import "MKScannerBXPDAdvParamsProtocol.h"
 
@@ -21,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (id <MKScannerBXPDAccParamsProtocol>)accParamsProtocol;
 
 - (id <MKScannerAccDataProtocol>)accProtocol;
-
-- (id <MKScannerBXPButtonCRAlarmEventProtocol>)alarmEventProtocol;
 
 - (id <MKScannerBXPDAdvParamsProtocol>)advProtocol;
 

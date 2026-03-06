@@ -3,6 +3,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MKScannerBXPDAdvParamsProtocol <NSObject>
 
+/// 读取回来的间隔对于BXPC/BXPD为100，BXPT为1，默认为1
+@property (nonatomic, assign)NSInteger multiples;
+
 - (void)readAdvParamsWithSucBlock:(void (^)(NSArray *dataList))sucBlock
                       failedBlock:(void (^)(NSError *error))failedBlock;
 

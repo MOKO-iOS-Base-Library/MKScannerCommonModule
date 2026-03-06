@@ -12,9 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设备跟当前网关断开连接了，gatewayMacAddress当前网关设备的mac,deviceMacAddress当前网关连接的设备的mac
 @property (nonatomic, copy)void (^deviceDisconnectBlock)(NSString *gatewayMacAddress, NSString *deviceMacAddress);
 
-/// 当前网关连接的蓝牙设备的mac
-@property (nonatomic, copy)NSString *bleMac;
-
 @property (nonatomic, copy)NSString *firmwareUrl;
 
 @property (nonatomic, copy)NSString *dataUrl;

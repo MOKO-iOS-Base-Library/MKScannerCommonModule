@@ -193,6 +193,8 @@
 }
 
 - (void)txPowerButtonPressed:(UIButton *)btn {
+    [self.beforeIntervalField resignFirstResponder];
+    [self.afterIntervalField resignFirstResponder];
     NSInteger index = 0;
     for (NSInteger i = 0; i < self.txPowerList.count; i ++) {
         if ([btn.titleLabel.text isEqualToString:self.txPowerList[i]]) {

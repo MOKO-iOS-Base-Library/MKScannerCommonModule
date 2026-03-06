@@ -8,7 +8,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 监听Sensor数据
 - (void)notifySensorData:(BOOL)isOn
                 sucBlock:(void (^)(void))sucBlock
-            failedBlock:(void (^)(NSError *error))failedBlock;
+             failedBlock:(void (^)(NSError *error))failedBlock;
 
 @end
 

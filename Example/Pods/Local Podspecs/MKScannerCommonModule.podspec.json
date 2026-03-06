@@ -195,8 +195,17 @@
               "name": "DeviceInfoPage",
               "subspecs": [
                 {
+                  "name": "Model",
+                  "source_files": "MKScannerCommonModule/Classes/BleModule/Pages/DeviceInfoPage/Model/**"
+                },
+                {
                   "name": "Protocol",
-                  "source_files": "MKScannerCommonModule/Classes/BleModule/Pages/DeviceInfoPage/Protocol/**"
+                  "source_files": "MKScannerCommonModule/Classes/BleModule/Pages/DeviceInfoPage/Protocol/**",
+                  "dependencies": {
+                    "MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model": [
+
+                    ]
+                  }
                 },
                 {
                   "name": "Controller",
@@ -1425,8 +1434,17 @@
                   "name": "DeviceInfoPage",
                   "subspecs": [
                     {
+                      "name": "Model",
+                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/DeviceInfoPage/Model/**"
+                    },
+                    {
                       "name": "Protocol",
-                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol/**"
+                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol/**",
+                      "dependencies": {
+                        "MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model": [
+
+                        ]
+                      }
                     },
                     {
                       "name": "Controller",

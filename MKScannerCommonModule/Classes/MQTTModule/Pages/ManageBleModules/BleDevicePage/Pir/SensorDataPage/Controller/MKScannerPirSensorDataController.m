@@ -50,6 +50,7 @@ MKScannerBXPButtonAccHeaderViewDelegate>
 - (instancetype)initWithProtocol:(id<MKScannerPirSensorDataProtocol>)protocol {
     if (self = [super init]) {
         _protocol = protocol;
+        [self setupBlock];
     }
     return self;
 }

@@ -11,8 +11,6 @@
 #import "MKMacroDefines.h"
 #import "UIView+MKAdd.h"
 
-#import "MKScannerDeviceModelManager.h"
-
 #import "MKScannerMQTTModuleManager.h"
 
 @interface MKScannerBaseController ()
@@ -31,88 +29,34 @@
     [self addNotifications];
 }
 
-#pragma mark - note
-- (void)deviceOffline:(NSNotification *)note {
-    NSDictionary *user = note.userInfo;
-    if (!ValidDict(user) || !ValidStr(user[@"macAddress"])) {
-        return;
-    }
-    [self processOfflineWithMacAddress:user[@"macAddress"]];
-}
-
-- (void)receiveDeviceLwtMessage:(NSNotification *)note {
-    NSDictionary *user = note.userInfo;
-    if (!ValidDict(user) || !ValidStr(user[@"device_info"][@"mac"])) {
-        return;
-    }
-    [self processOfflineWithMacAddress:user[@"device_info"][@"mac"]];
-}
-
-- (void)deviceResetByButton:(NSNotification *)note {
-    NSDictionary *user = note.userInfo;
-    if (!ValidDict(user) || !ValidStr(user[@"device_info"][@"mac"])) {
-        return;
-    }
-    [self processOfflineWithMacAddress:user[@"device_info"][@"mac"]];
-}
-
+#pragma mark - Notes
 - (void)loadChanged:(NSNotification *)note {
     NSDictionary *user = note.userInfo;
-    if (!ValidDict(user) || !ValidStr(user[@"device_info"][@"mac"])) {
+    if (!ValidDict(user) || !user[@"state"]) {
         return;
     }
-    if (![user[@"device_info"][@"mac"] isEqualToString:[MKScannerDeviceModelManager shared].macAddress] || ![MKBaseViewController isCurrentViewControllerVisible:self]) {
-        return;
-    }
-    NSString *message = ([user[@"data"][@"load_state"] integerValue] == 1 ? @"Load start work!" : @"Load stop work!");
+    
+    NSString *message = ([user[@"state"] integerValue] == 1 ? @"Load start work!" : @"Load stop work!");
     [self.view showCentralToast:message];
 }
 
 #pragma mark - Private method
 - (void)addNotifications {
-    if (ValidStr([MKScannerMQTTModuleManager shared].deviceOfflineNotification)) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(deviceOffline:)
-                                                     name:[MKScannerMQTTModuleManager shared].deviceOfflineNotification
-                                                   object:nil];
-    }
-    if (ValidStr([MKScannerMQTTModuleManager shared].receiveLwtMessageNotification)) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(receiveDeviceLwtMessage:)
-                                                     name:[MKScannerMQTTModuleManager shared].receiveLwtMessageNotification
-                                                   object:nil];
-    }
-    if (ValidStr([MKScannerMQTTModuleManager shared].resetByButtonNotification)) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(deviceResetByButton:)
-                                                     name:[MKScannerMQTTModuleManager shared].resetByButtonNotification
-                                                   object:nil];
-    }
-    if (ValidStr([MKScannerMQTTModuleManager shared].loadChangedNotification)) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(loadChanged:)
-                                                     name:[MKScannerMQTTModuleManager shared].loadChangedNotification
-                                                   object:nil];
-    }
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(deviceOffline)
+                                                 name:mk_scanner_deviceOfflineNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(loadChanged:)
+                                                 name:mk_scanner_deviceLoadChangedNotification
+                                               object:nil];
 }
 
-- (void)processOfflineWithMacAddress:(NSString *)macAddress {
-    if (![macAddress isEqualToString:[MKScannerDeviceModelManager shared].macAddress]) {
-        return;
-    }
+- (void)deviceOffline {
     if (![MKBaseViewController isCurrentViewControllerVisible:self]) {
         return;
     }
-    //让setting页面推出的alert消失
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_scanner_needDismissAlert" object:nil];
-    //让所有MKPickView消失
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"mk_customUIModule_dismissPickView" object:nil];
     [self.view showCentralToast:@"device is off-line"];
-    [self performSelector:@selector(gobackToListView) withObject:nil afterDelay:1.f];
-}
-
-- (void)gobackToListView {
-    [self popToViewControllerWithClassName:[MKScannerMQTTModuleManager shared].deviceListsPageClassName];
 }
 
 @end

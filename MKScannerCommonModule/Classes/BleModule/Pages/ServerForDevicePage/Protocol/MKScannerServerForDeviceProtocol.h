@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)checkParams;
 
 /// 更新数据
-/// @param model 数据源
+/// @param json 数据源
 - (void)updateValue:(NSDictionary *)json;
 
 - (void)readDataWithSucBlock:(void (^)(void))sucBlock failedBlock:(void (^)(NSError *error))failedBlock;

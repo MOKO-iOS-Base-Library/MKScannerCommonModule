@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MKScannerDeviceModelManager : NSObject
 
+@property (nonatomic, strong, readonly)MKScannerDeviceModel *deviceModel;
+
+@property (nonatomic, assign)BOOL isV2;
+
 + (MKScannerDeviceModelManager *)shared;
 
 + (void)sharedDealloc;
