@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lovexiaoxia/MKScannerCommonModule'
+  s.homepage         = 'https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lovexiaoxia' => 'aadyx2007@163.com' }
-  s.source           = { :git => 'https://github.com/lovexiaoxia/MKScannerCommonModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
   
