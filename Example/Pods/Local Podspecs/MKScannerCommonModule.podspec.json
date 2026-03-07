@@ -830,6 +830,11 @@
                       "subspecs": [
                         {
                           "name": "CRPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -840,9 +845,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage": [
 
                                 ]
                               }
@@ -904,6 +906,11 @@
                       "subspecs": [
                         {
                           "name": "CPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -914,9 +921,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage": [
 
                                 ]
                               }
@@ -966,6 +970,11 @@
                         },
                         {
                           "name": "DPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -976,9 +985,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage": [
 
                                 ]
                               }
@@ -1053,6 +1059,17 @@
                         },
                         {
                           "name": "SPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -1063,15 +1080,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage": [
 
                                 ]
                               }
@@ -1121,6 +1129,14 @@
                         },
                         {
                           "name": "TPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -1131,12 +1147,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage": [
 
                                 ]
                               }
@@ -1168,6 +1178,17 @@
                         },
                         {
                           "name": "PirPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -1178,15 +1199,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage": [
 
                                 ]
                               }
@@ -1290,6 +1302,17 @@
                         },
                         {
                           "name": "TofPage",
+                          "dependencies": {
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage": [
+
+                            ],
+                            "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage": [
+
+                            ]
+                          },
                           "subspecs": [
                             {
                               "name": "Protocol",
@@ -1300,15 +1323,6 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage": [
-
-                                ],
-                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage": [
 
                                 ]
                               }
@@ -1529,6 +1543,11 @@
                 },
                 {
                   "name": "SystemTimePage",
+                  "dependencies": {
+                    "MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage": [
+
+                    ]
+                  },
                   "subspecs": [
                     {
                       "name": "Protocol",
@@ -1546,9 +1565,6 @@
 
                         ],
                         "MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View": [
-
-                        ],
-                        "MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage": [
 
                         ]
                       }

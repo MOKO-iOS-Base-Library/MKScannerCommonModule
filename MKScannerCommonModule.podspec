@@ -23,16 +23,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '14.0'
-  s.static_framework = true
-  
-  # 修复 libarclite 缺失问题
-  s.pod_target_xcconfig = {
-    'IPHONEOS_DEPLOYMENT_TARGET' => '14.0',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = {
-    'IPHONEOS_DEPLOYMENT_TARGET' => '14.0'
-  }
   
   # 资源文件
   s.resource_bundles = {
@@ -623,6 +613,7 @@ Pod::Spec.new do |s|
           sssss.subspec 'BXPBCR' do |ssssss|
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
             ssssss.subspec 'CRPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol/**'
               end
@@ -1050,6 +1041,7 @@ Pod::Spec.new do |s|
         
         # 系统时间页面
         ssss.subspec 'SystemTimePage' do |sssss|
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage'
           sssss.subspec 'Protocol' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/SystemTimePage/Protocol/**'
           end
@@ -1062,7 +1054,6 @@ Pod::Spec.new do |s|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Settings/SystemTimePage/Controller/**'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Protocol'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage'
           end
         end
       end
