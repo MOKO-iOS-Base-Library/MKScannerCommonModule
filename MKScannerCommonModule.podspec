@@ -54,6 +54,7 @@ Pod::Spec.new do |s|
     # Excel管理
     ss.subspec 'ExcelManager' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/Expand/ExcelManager/**'
+      sss.dependency 'libxlsxwriter'
       sss.dependency 'SSZipArchive'
     end
     
@@ -620,6 +621,7 @@ Pod::Spec.new do |s|
           
           # BXPBCR特定页面
           sssss.subspec 'BXPBCR' do |ssssss|
+            ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
             ssssss.subspec 'CRPage' do |sssssss|
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol/**'
@@ -628,7 +630,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
               end
             end
             ssssss.subspec 'EventAlarmPage' do |sssssss|
@@ -665,6 +666,7 @@ Pod::Spec.new do |s|
           # BXPC特定页面
           sssss.subspec 'BXPC' do |ssssss|
             ssssss.subspec 'CPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol/**'
               end
@@ -672,7 +674,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage'
               end
             end
             ssssss.subspec 'HistoricalTHDataPage' do |sssssss|
@@ -700,6 +701,7 @@ Pod::Spec.new do |s|
               end
             end
             ssssss.subspec 'DPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol/**'
               end
@@ -707,7 +709,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage'
               end
             end
           end
@@ -753,6 +754,9 @@ Pod::Spec.new do |s|
             end
             
             ssssss.subspec 'SPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol/**'
               end
@@ -760,9 +764,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage'
               end
             end
           end
@@ -792,6 +793,8 @@ Pod::Spec.new do |s|
             end
             
             ssssss.subspec 'TPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol/**'
               end
@@ -799,8 +802,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage'
               end
             end
           end
@@ -819,6 +820,9 @@ Pod::Spec.new do |s|
             end
             
             ssssss.subspec 'PirPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol/**'
               end
@@ -826,9 +830,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage'
               end
             end
             
@@ -891,6 +892,9 @@ Pod::Spec.new do |s|
             end
             
             ssssss.subspec 'TofPage' do |sssssss|
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage'
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol/**'
               end
@@ -898,9 +902,6 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage'
               end
             end
           end

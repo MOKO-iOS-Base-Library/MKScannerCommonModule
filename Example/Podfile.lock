@@ -405,121 +405,122 @@ PODS:
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKTextField
-  - MKScannerCommonModule (0.0.1):
+  - MKScannerCommonModule (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
-    - MKScannerCommonModule/BleModule (= 0.0.1)
-    - MKScannerCommonModule/DeviceModel (= 0.0.1)
-    - MKScannerCommonModule/Expand (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule (= 0.0.1)
+    - MKScannerCommonModule/BleModule (= 0.0.2)
+    - MKScannerCommonModule/DeviceModel (= 0.0.2)
+    - MKScannerCommonModule/Expand (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/BleModule (0.0.1):
+  - MKScannerCommonModule/BleModule (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
-    - MKScannerCommonModule/BleModule/BaseController (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Manager (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages (= 0.0.1)
+    - MKScannerCommonModule/BleModule/BaseController (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/BaseController (0.0.1):
+  - MKScannerCommonModule/BleModule/BaseController (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
-    - MKScannerCommonModule/BleModule/Manager
-    - MKScannerCommonModule/Expand/View/AlertView
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Manager (0.0.1):
-    - Masonry
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKScannerCommonModule/DeviceModel
-    - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Controller (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Protocol
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Protocol (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/AdvBeaconPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Controller (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/DeviceInfoPage/Model
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/View (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/View (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Controller (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
@@ -527,80 +528,90 @@ PODS:
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Protocol
     - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/View
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Protocol (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/View (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NearbyWifiPage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Controller (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Protocol
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Protocol (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/NTPTimezonePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Controller (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Protocol
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Protocol (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ScannerFilterPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
-    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/View (= 0.0.1)
+    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/View (= 0.0.2)
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Controller (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
@@ -608,1079 +619,1158 @@ PODS:
     - MKScannerCommonModule/BleModule/BaseController
     - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Protocol
     - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/View
-    - MKScannerCommonModule/Expand/ExcelManager
-    - MKScannerCommonModule/Expand/ImportServerPage
-    - MKScannerCommonModule/Expand/View/AlertView
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Protocol (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/View (0.0.1):
+  - MKScannerCommonModule/BleModule/Pages/ServerForDevicePage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/BleModule/BaseController
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/DeviceModel (0.0.1):
+  - MKScannerCommonModule/DeviceModel (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand (0.0.1):
+  - MKScannerCommonModule/Expand (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
-    - MKScannerCommonModule/Expand/ExcelManager (= 0.0.1)
-    - MKScannerCommonModule/Expand/ImportServerPage (= 0.0.1)
-    - MKScannerCommonModule/Expand/View (= 0.0.1)
+    - MKScannerCommonModule/Expand/ExcelManager (= 0.0.2)
+    - MKScannerCommonModule/Expand/ImportServerPage (= 0.0.2)
+    - MKScannerCommonModule/Expand/View (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/Expand/ExcelManager (0.0.1):
-    - Masonry
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MLInputDodger
-  - MKScannerCommonModule/Expand/ImportServerPage (0.0.1):
-    - Masonry
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKScannerCommonModule/Expand/ImportServerPage/Controller (= 0.0.1)
-    - MLInputDodger
-  - MKScannerCommonModule/Expand/ImportServerPage/Controller (0.0.1):
-    - Masonry
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKScannerCommonModule/Expand/ExcelManager
-    - MLInputDodger
-  - MKScannerCommonModule/Expand/View (0.0.1):
-    - Masonry
-    - MJRefresh
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKScannerCommonModule/Expand/View/AddDeviceView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/AdvNormalCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/AdvTriggerCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/AdvTriggerTwoStateCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/AlertView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/BleWifiSettingsCertCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/ButtonFirmwareCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/BXPAdvParamsCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/BXPButtonAccHeaderView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/EasyShowView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/ManagerBleDeviceView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/MKScannerFilterCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/PressEventCountCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/RemoteReminderCell (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/ServerForAppView (= 0.0.1)
-    - MKScannerCommonModule/Expand/View/UserCredentialsView (= 0.0.1)
-    - MLInputDodger
-  - MKScannerCommonModule/Expand/View/AddDeviceView (0.0.1):
+  - MKScannerCommonModule/Expand/ExcelManager (0.0.2):
+    - libxlsxwriter
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/AdvNormalCell (0.0.1):
+    - SSZipArchive
+  - MKScannerCommonModule/Expand/ImportServerPage (0.0.2):
+    - Masonry
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKScannerCommonModule/Expand/ImportServerPage/Controller (= 0.0.2)
+    - MLInputDodger
+  - MKScannerCommonModule/Expand/ImportServerPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/AdvTriggerCell (0.0.1):
+  - MKScannerCommonModule/Expand/View (0.0.2):
+    - Masonry
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKScannerCommonModule/Expand/View/AddDeviceView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/AdvNormalCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/AdvTriggerCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/AdvTriggerTwoStateCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/AlertView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/BleWifiSettingsCertCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/ButtonFirmwareCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/BXPAdvParamsCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/BXPButtonAccHeaderView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/EasyShowView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/ManagerBleDeviceView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/PressEventCountCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/RemoteReminderCell (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/ServerForAppView (= 0.0.2)
+    - MKScannerCommonModule/Expand/View/UserCredentialsView (= 0.0.2)
+    - MLInputDodger
+  - MKScannerCommonModule/Expand/View/AddDeviceView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/AdvTriggerTwoStateCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/AdvNormalCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/AlertView (0.0.1):
+  - MKScannerCommonModule/Expand/View/AdvTriggerCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/BleWifiSettingsCertCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/AdvTriggerTwoStateCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/ButtonFirmwareCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/AlertView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/BXPAdvParamsCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/BleWifiSettingsCertCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/BXPButtonAccHeaderView (0.0.1):
+  - MKScannerCommonModule/Expand/View/ButtonFirmwareCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/EasyShowView (0.0.1):
+  - MKScannerCommonModule/Expand/View/BXPAdvParamsCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView (0.0.1):
+  - MKScannerCommonModule/Expand/View/BXPButtonAccHeaderView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/ManagerBleDeviceView (0.0.1):
+  - MKScannerCommonModule/Expand/View/EasyShowView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/MKScannerFilterCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/PressEventCountCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/ManagerBleDeviceView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/RemoteReminderCell (0.0.1):
+  - MKScannerCommonModule/Expand/View/PressEventCountCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/ServerForAppView (0.0.1):
+  - MKScannerCommonModule/Expand/View/RemoteReminderCell (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/Expand/View/UserCredentialsView (0.0.1):
+  - MKScannerCommonModule/Expand/View/ServerForAppView (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule (0.0.1):
+  - MKScannerCommonModule/Expand/View/UserCredentialsView (0.0.2):
+    - Masonry
+    - MJRefresh
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKScannerCommonModule/MQTTModule (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/MQTTModule/BaseController (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Manager (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages (= 0.0.1)
+    - MKScannerCommonModule/Expand
+    - MKScannerCommonModule/MQTTModule/BaseController (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Manager (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/BaseController (0.0.1):
+  - MKScannerCommonModule/MQTTModule/BaseController (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/AlertView
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/Manager
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Manager (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Manager (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/AdvNormalCell
-    - MKScannerCommonModule/Expand/View/AdvTriggerCell
-    - MKScannerCommonModule/Expand/View/AdvTriggerTwoStateCell
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/View (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/View (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/View
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/View (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/HistoricalTHDataPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/AccParamsPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPD/DPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/View (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/View (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/View
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/View (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage
@@ -1688,179 +1778,196 @@ PODS:
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/AccParamsPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/MotionEventPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPT/TPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/AdvParamsPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol
@@ -1868,195 +1975,214 @@ PODS:
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/PirPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorDataPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Pir/SensorParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol (= 0.0.2)
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/AdvParamsPage
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/SensorDataPage
@@ -2064,693 +2190,760 @@ PODS:
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/Tof/TofPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/BXPButtonAccHeaderView
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1 (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2 (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1 (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2 (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1 (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1 (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2 (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2 (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/BXPAdvParamsCell
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/BXPAdvParamsCell
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/RemoteReminderCell
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/View (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/View (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/View
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/View (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/HistoricalTHDataHeaderView
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
-    - MKScannerCommonModule/Expand/View/RemoteReminderCell
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/AdvBeaconPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/CommunicatePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DataReportPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/DeviceInfoPage/Model
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/View (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/View (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/View
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/View (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/MqttServerPage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/NetworkStatusPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/OTAPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Protocol (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Protocol (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Protocol
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ReconnectTimePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/View (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/View (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/View
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/View (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/ResetByButtonPage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Controller (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Protocol (= 0.0.1)
-    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View (= 0.0.1)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Controller (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Protocol (= 0.0.2)
+    - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View (= 0.0.2)
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Controller (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Controller (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MKScannerCommonModule/MQTTModule/Pages/Settings/NTPServerPage
     - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Protocol
     - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Protocol (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/Protocol (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
-  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View (0.0.1):
+  - MKScannerCommonModule/MQTTModule/Pages/Settings/SystemTimePage/View (0.0.2):
     - Masonry
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MKScannerCommonModule/DeviceModel
+    - MKScannerCommonModule/Expand
     - MKScannerCommonModule/MQTTModule/BaseController
     - MLInputDodger
   - MLInputDodger (1.5.2)
@@ -2785,7 +2978,7 @@ SPEC CHECKSUMS:
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   MKBaseModuleLibrary: 2b79bcae588c755588413fbb643b510253271b23
   MKCustomUIModule: 8426eba1d3178b06d92741d31da32502920fb8fa
-  MKScannerCommonModule: 6007a2fd0b766ab27db75404ad3a472b80c8a3f4
+  MKScannerCommonModule: cb8b45b9afabd0239a2fc84a03876eade76ae69c
   MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
