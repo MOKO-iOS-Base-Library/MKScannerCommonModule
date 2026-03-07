@@ -635,7 +635,7 @@ Pod::Spec.new do |s|
         # ========================================================
         ssss.subspec 'BleDevicePage' do |sssss|
           
-          ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage'
           
           # BXPBCR特定页面
           sssss.subspec 'BXPBCR' do |ssssss|
