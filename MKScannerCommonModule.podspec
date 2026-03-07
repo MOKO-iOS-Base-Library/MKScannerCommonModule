@@ -30,16 +30,15 @@ Pod::Spec.new do |s|
   }
   
   # 基础依赖
-  s.dependency 'MLInputDodger'
-  s.dependency 'MKBaseModuleLibrary'
-  s.dependency 'MKCustomUIModule'
-  s.dependency 'Masonry'
-  s.dependency 'MJRefresh'
   
   # ==========================================================
   # 通用扩展模块
   # ==========================================================
   s.subspec 'Expand' do |ss|
+    
+    ss.dependency 'MKBaseModuleLibrary'
+    ss.dependency 'MKCustomUIModule'
+    ss.dependency 'Masonry'
     
     # Excel管理
     ss.subspec 'ExcelManager' do |sss|
@@ -142,6 +141,8 @@ Pod::Spec.new do |s|
   # ==========================================================
   s.subspec 'DeviceModel' do |ss|
     ss.source_files = 'MKScannerCommonModule/Classes/DeviceModel/**'
+    
+    ss.dependency 'MKBaseModuleLibrary'
   end
   
   # ==========================================================
@@ -149,6 +150,7 @@ Pod::Spec.new do |s|
   # ==========================================================
   s.subspec 'BleModule' do |ss|
     ss.dependency 'MKScannerCommonModule/Expand'
+    ss.dependency 'MLInputDodger'
     
     # 蓝牙基础控制器
     ss.subspec 'BaseController' do |sss|
@@ -256,6 +258,7 @@ Pod::Spec.new do |s|
   s.subspec 'MQTTModule' do |ss|
     ss.dependency 'MKScannerCommonModule/Expand'
     ss.dependency 'MKScannerCommonModule/DeviceModel'
+    ss.dependency 'MLInputDodger'
     
     # MQTT管理器
     ss.subspec 'Manager' do |sss|
