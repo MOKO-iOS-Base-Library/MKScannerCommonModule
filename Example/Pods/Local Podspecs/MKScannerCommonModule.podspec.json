@@ -18,39 +18,25 @@
   "platforms": {
     "ios": "14.0"
   },
-  "static_framework": true,
-  "pod_target_xcconfig": {
-    "IPHONEOS_DEPLOYMENT_TARGET": "14.0",
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "user_target_xcconfig": {
-    "IPHONEOS_DEPLOYMENT_TARGET": "14.0"
-  },
   "resource_bundles": {
     "MKScannerCommonModule": [
       "MKScannerCommonModule/Assets/*.png"
     ]
   },
-  "dependencies": {
-    "MLInputDodger": [
-
-    ],
-    "MKBaseModuleLibrary": [
-
-    ],
-    "MKCustomUIModule": [
-
-    ],
-    "Masonry": [
-
-    ],
-    "MJRefresh": [
-
-    ]
-  },
   "subspecs": [
     {
       "name": "Expand",
+      "dependencies": {
+        "MKBaseModuleLibrary": [
+
+        ],
+        "MKCustomUIModule": [
+
+        ],
+        "Masonry": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "ExcelManager",
@@ -146,12 +132,20 @@
     },
     {
       "name": "DeviceModel",
-      "source_files": "MKScannerCommonModule/Classes/DeviceModel/**"
+      "source_files": "MKScannerCommonModule/Classes/DeviceModel/**",
+      "dependencies": {
+        "MKBaseModuleLibrary": [
+
+        ]
+      }
     },
     {
       "name": "BleModule",
       "dependencies": {
         "MKScannerCommonModule/Expand": [
+
+        ],
+        "MLInputDodger": [
 
         ]
       },
@@ -310,6 +304,9 @@
 
         ],
         "MKScannerCommonModule/DeviceModel": [
+
+        ],
+        "MLInputDodger": [
 
         ]
       },

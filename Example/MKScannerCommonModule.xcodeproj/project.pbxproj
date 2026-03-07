@@ -200,7 +200,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				7BC8B3A0ED66BCC0C5A266AE /* [CP] Embed Pods Frameworks */,
-				A25293C6024F3B4DE122B833 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,11 +321,11 @@
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/MKBaseModuleLibrary/MKBaseModuleLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/MKCustomUIModule/MKCustomUIModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MKScannerCommonModule/MKScannerCommonModule.framework",
 				"${BUILT_PRODUCTS_DIR}/MLInputDodger/MLInputDodger.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
-				"${BUILT_PRODUCTS_DIR}/WRNavigationBar/WRNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/libxlsxwriter/xlsxwriter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -335,34 +334,16 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKBaseModuleLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKCustomUIModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKScannerCommonModule.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLInputDodger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xlsxwriter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKScannerCommonModule_Example/Pods-MKScannerCommonModule_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A25293C6024F3B4DE122B833 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MKScannerCommonModule_Example/Pods-MKScannerCommonModule_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MKScannerCommonModule/MKScannerCommonModule.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MKScannerCommonModule.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKScannerCommonModule_Example/Pods-MKScannerCommonModule_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

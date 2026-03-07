@@ -614,7 +614,6 @@ Pod::Spec.new do |s|
           
           # BXPBCR特定页面
           sssss.subspec 'BXPBCR' do |ssssss|
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
             ssssss.subspec 'CRPage' do |sssssss|
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
               sssssss.subspec 'Protocol' do |ssssssss|
