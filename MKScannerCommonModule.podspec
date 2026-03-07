@@ -35,11 +35,6 @@ Pod::Spec.new do |s|
   # 通用扩展模块
   # ==========================================================
   s.subspec 'Expand' do |ss|
-    
-    ss.dependency 'MKBaseModuleLibrary'
-    ss.dependency 'MKCustomUIModule'
-    ss.dependency 'Masonry'
-    
     # Excel管理
     ss.subspec 'ExcelManager' do |sss|
       sss.source_files = 'MKScannerCommonModule/Classes/Expand/ExcelManager/**'
@@ -134,6 +129,8 @@ Pod::Spec.new do |s|
         ssss.source_files = 'MKScannerCommonModule/Classes/Expand/View/UserCredentialsView/**'
       end
     end
+    ss.dependency 'MKBaseModuleLibrary'
+    ss.dependency 'MKCustomUIModule'
   end
   
   # ==========================================================
