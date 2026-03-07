@@ -276,7 +276,7 @@ Pod::Spec.new do |s|
     # MQTT页面
     ss.subspec 'Pages' do |sss|
             
-      ss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
+      sss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
       
       # --------------------------------------------------------
       # 过滤相关页面
@@ -291,7 +291,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/DataUploadIntervalPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/DataUploadIntervalPage/Protocol'
           end
         end
@@ -304,7 +303,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/DuplicateDataFilterPage/Protocol'
           end
         end
@@ -317,7 +315,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByAdvNamePage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByAdvNamePage/Protocol'
           end
         end
@@ -330,7 +327,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByBeaconPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage/Protocol'
           end
         end
@@ -343,7 +339,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByButtonPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage/Protocol'
           end
         end
@@ -356,7 +351,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByMacPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByMacPage/Protocol'
           end
         end
@@ -369,7 +363,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage/Protocol'
           end
         end
@@ -382,7 +375,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByOtherPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage/Protocol'
           end
         end
@@ -395,7 +387,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByPirPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol'
           end
         end
@@ -408,7 +399,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByTagPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage/Protocol'
           end
         end
@@ -421,7 +411,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByTLMPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage/Protocol'
           end
         end
@@ -434,7 +423,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByTofPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage/Protocol'
           end
         end
@@ -447,7 +435,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByUIDPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage/Protocol'
           end
         end
@@ -460,7 +447,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByURLPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage/Protocol'
           end
         end
@@ -473,7 +459,6 @@ Pod::Spec.new do |s|
           
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/UploadDataOptionPage/Controller/**'
-            ssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/UploadDataOptionPage/Protocol'
           end
         end
@@ -495,7 +480,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/AccDataPage/Protocol'
             end
           end
@@ -510,7 +494,6 @@ Pod::Spec.new do |s|
               
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Controller/**'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V1/Protocol'
               end
             end
@@ -522,7 +505,6 @@ Pod::Spec.new do |s|
               
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Controller/**'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/ButtonDFUPage/V2/Protocol'
               end
             end
@@ -536,7 +518,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPCAdvParamsPage/Protocol'
             end
           end
@@ -549,7 +530,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPDAdvParamsPage/Protocol'
             end
           end
@@ -562,7 +542,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol'
             end
           end
@@ -579,7 +558,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/Protocol'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/NormalConnectedPage/View'
             end
@@ -593,7 +571,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RealTimeTHDataPage/Protocol'
             end
           end
@@ -610,7 +587,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Protocol'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/RemoteReminderPage/Model'
             end
@@ -624,7 +600,6 @@ Pod::Spec.new do |s|
             
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Controller/**'
-              sssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/THDataSampleRatePage/Protocol'
             end
           end
@@ -692,7 +667,7 @@ Pod::Spec.new do |s|
               
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Controller/**'
-                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/BaseController'
+                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPC/CPage/Protocol'
               end
             end
             
