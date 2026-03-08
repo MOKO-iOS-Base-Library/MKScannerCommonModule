@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
       sss.source_files = 'MKScannerCommonModule/Classes/Expand/ExcelManager/**'
       sss.dependency 'libxlsxwriter'
       sss.dependency 'SSZipArchive'
+      sss.dependency 'MKBaseModuleLibrary'
     end
     
     # 导入服务器页面
