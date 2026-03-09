@@ -473,6 +473,8 @@ Pod::Spec.new do |s|
         # 公共页面
         ssss.subspec 'CommonPage' do |sssss|
           
+          sssss.dependency 'MKScannerCommonModule/Expand'
+          
           # 加速度数据页面
           sssss.subspec 'AccDataPage' do |ssssss|
             ssssss.subspec 'Protocol' do |sssssss|
