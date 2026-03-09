@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC
@@ -98,6 +98,11 @@ Pod::Spec.new do |s|
       # 简易显示视图
       sss.subspec 'EasyShowView' do |ssss|
         ssss.source_files = 'MKScannerCommonModule/Classes/Expand/View/EasyShowView/**'
+      end
+      
+      # 过滤cell
+      sss.subspec 'FilterCell' do |ssss|
+        ssss.source_files = 'MKScannerCommonModule/Classes/Expand/View/FilterCell/**'
       end
       
       # 历史温湿度数据头部视图

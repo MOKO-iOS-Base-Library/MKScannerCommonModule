@@ -1,6 +1,6 @@
 {
   "name": "MKScannerCommonModule",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "summary": "Common scanner module for BLE and MQTT device management",
   "description": "MKScannerCommonModule provides a comprehensive set of reusable components for scanning,\nmanaging, and configuring BLE and MQTT devices. It includes filter pages, device info pages,\nnearby WiFi scanning, and various BXP device management features.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git",
-    "tag": "0.0.2"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "14.0"
@@ -26,17 +26,6 @@
   "subspecs": [
     {
       "name": "Expand",
-      "dependencies": {
-        "MKBaseModuleLibrary": [
-
-        ],
-        "MKCustomUIModule": [
-
-        ],
-        "Masonry": [
-
-        ]
-      },
       "subspecs": [
         {
           "name": "ExcelManager",
@@ -47,6 +36,9 @@
             ],
             "SSZipArchive": [
 
+            ],
+            "MKBaseModuleLibrary": [
+
             ]
           }
         },
@@ -55,12 +47,28 @@
           "subspecs": [
             {
               "name": "Controller",
-              "source_files": "MKScannerCommonModule/Classes/Expand/ImportServerPage/Controller/**"
+              "source_files": "MKScannerCommonModule/Classes/Expand/ImportServerPage/Controller/**",
+              "dependencies": {
+                "MKBaseModuleLibrary": [
+
+                ],
+                "MKCustomUIModule": [
+
+                ]
+              }
             }
           ]
         },
         {
           "name": "View",
+          "dependencies": {
+            "MKBaseModuleLibrary": [
+
+            ],
+            "MKCustomUIModule": [
+
+            ]
+          },
           "subspecs": [
             {
               "name": "AddDeviceView",
@@ -103,6 +111,10 @@
               "source_files": "MKScannerCommonModule/Classes/Expand/View/EasyShowView/**"
             },
             {
+              "name": "FilterCell",
+              "source_files": "MKScannerCommonModule/Classes/Expand/View/FilterCell/**"
+            },
+            {
               "name": "HistoricalTHDataHeaderView",
               "source_files": "MKScannerCommonModule/Classes/Expand/View/HistoricalTHDataHeaderView/**"
             },
@@ -142,10 +154,16 @@
     {
       "name": "BleModule",
       "dependencies": {
-        "MKScannerCommonModule/Expand": [
+        "MKBaseModuleLibrary": [
+
+        ],
+        "MKCustomUIModule": [
 
         ],
         "MLInputDodger": [
+
+        ],
+        "MKScannerCommonModule/Expand": [
 
         ]
       },
@@ -300,13 +318,16 @@
     {
       "name": "MQTTModule",
       "dependencies": {
-        "MKScannerCommonModule/Expand": [
+        "MKBaseModuleLibrary": [
 
         ],
-        "MKScannerCommonModule/DeviceModel": [
+        "MKCustomUIModule": [
 
         ],
         "MLInputDodger": [
+
+        ],
+        "MKScannerCommonModule/Expand": [
 
         ]
       },
@@ -612,6 +633,11 @@
               "subspecs": [
                 {
                   "name": "CommonPage",
+                  "dependencies": {
+                    "MKScannerCommonModule/Expand": [
+
+                    ]
+                  },
                   "subspecs": [
                     {
                       "name": "AccDataPage",
