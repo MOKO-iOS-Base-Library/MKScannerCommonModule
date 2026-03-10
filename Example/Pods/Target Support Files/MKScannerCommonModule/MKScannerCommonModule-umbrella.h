@@ -76,6 +76,8 @@
 #import "MKScannerFilterByOtherProtocol.h"
 #import "MKScannerFilterByPirController.h"
 #import "MKScannerFilterByPirProtocol.h"
+#import "MKScannerFilterByRawDataController.h"
+#import "MKScannerFilterByRawDataProtocol.h"
 #import "MKScannerFilterByTLMController.h"
 #import "MKScannerFilterByTLMProtocol.h"
 #import "MKScannerFilterByTagController.h"

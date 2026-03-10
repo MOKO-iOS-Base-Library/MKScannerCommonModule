@@ -1,6 +1,6 @@
 {
   "name": "MKScannerCommonModule",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "Common scanner module for BLE and MQTT device management",
   "description": "MKScannerCommonModule provides a comprehensive set of reusable components for scanning,\nmanaging, and configuring BLE and MQTT devices. It includes filter pages, device info pages,\nnearby WiFi scanning, and various BXP device management features.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "platforms": {
     "ios": "14.0"
@@ -512,6 +512,56 @@
                       "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByPirPage/Controller/**",
                       "dependencies": {
                         "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol": [
+
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "FilterByRawDataPage",
+                  "dependencies": {
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage": [
+
+                    ],
+                    "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage": [
+
+                    ]
+                  },
+                  "subspecs": [
+                    {
+                      "name": "Protocol",
+                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByRawDataPage/Protocol/**"
+                    },
+                    {
+                      "name": "Controller",
+                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByRawDataPage/Controller/**",
+                      "dependencies": {
+                        "MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByRawDataPage/Protocol": [
 
                         ]
                       }

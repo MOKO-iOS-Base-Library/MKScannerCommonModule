@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC
@@ -394,6 +394,28 @@ Pod::Spec.new do |s|
           sssss.subspec 'Controller' do |ssssss|
             ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByPirPage/Controller/**'
             ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage/Protocol'
+          end
+        end
+        
+        # 按Raw Data过滤页面
+        ssss.subspec 'FilterByRawDataPage' do |sssss|
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByBeaconPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByButtonPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByNanoBeaconPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByOtherPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByPirPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTagPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTLMPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByTofPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByUIDPage'
+          sssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByURLPage'
+          sssss.subspec 'Protocol' do |ssssss|
+            ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByRawDataPage/Protocol/**'
+          end
+          
+          sssss.subspec 'Controller' do |ssssss|
+            ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/FilterByRawDataPage/Controller/**'
+            ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/FilterByRawDataPage/Protocol'
           end
         end
         
