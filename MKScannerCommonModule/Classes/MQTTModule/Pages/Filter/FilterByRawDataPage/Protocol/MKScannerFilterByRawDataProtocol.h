@@ -59,13 +59,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id <MKScannerFilterByTLMProtocol>)tlmProtocol;
 
-- (id <MKScannerFilterByTofProtocol>)tofProtocol;
-
 - (id <MKScannerFilterByUIDProtocol>)uidProtocol;
 
 - (id <MKScannerFilterByURLProtocol>)urlProtocol;
-
-- (id <MKScannerFilterByNanoBeaconProtocol>)nanoBeaconProtocol;
 
 - (void)readDataWithSucBlock:(void (^)(void))sucBlock failedBlock:(void (^)(NSError *error))failedBlock;
 
@@ -80,6 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)configFilterBXPTH:(BOOL)isOn
                  sucBlock:(void (^)(void))sucBlock
               failedBlock:(void (^)(NSError *error))failedBlock;
+
+@optional
+- (id <MKScannerFilterByTofProtocol>)tofProtocol;
+
+- (id <MKScannerFilterByNanoBeaconProtocol>)nanoBeaconProtocol;
 
 
 @end

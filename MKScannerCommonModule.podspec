@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC

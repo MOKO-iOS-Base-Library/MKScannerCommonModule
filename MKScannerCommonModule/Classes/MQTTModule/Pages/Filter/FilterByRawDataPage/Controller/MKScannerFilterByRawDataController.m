@@ -85,71 +85,111 @@ mk_textSwitchCellDelegate>
     if (indexPath.section == 0 && indexPath.row == 0) {
         //iBeacon
         id <MKScannerFilterByBeaconProtocol>protocol = self.protocol.beaconProtocol;
-        MKScannerFilterByBeaconController *vc = [[MKScannerFilterByBeaconController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByBeaconController *vc = [[MKScannerFilterByBeaconController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 0 && indexPath.row == 1) {
         //Eddystone-UID
         id <MKScannerFilterByUIDProtocol>protocol = self.protocol.uidProtocol;
-        MKScannerFilterByUIDController *vc = [[MKScannerFilterByUIDController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByUIDController *vc = [[MKScannerFilterByUIDController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 0 && indexPath.row == 2) {
         //Eddystone-URL
         id <MKScannerFilterByURLProtocol>protocol = self.protocol.urlProtocol;
-        MKScannerFilterByURLController *vc = [[MKScannerFilterByURLController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByURLController *vc = [[MKScannerFilterByURLController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 0 && indexPath.row == 3) {
         //Eddystone-TLM
         id <MKScannerFilterByTLMProtocol>protocol = self.protocol.tlmProtocol;
-        MKScannerFilterByTLMController *vc = [[MKScannerFilterByTLMController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByTLMController *vc = [[MKScannerFilterByTLMController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 2 && indexPath.row == 0) {
         //BXP-Button
         id <MKScannerFilterByButtonProtocol>protocol = self.protocol.buttonProtocol;
-        MKScannerFilterByButtonController *vc = [[MKScannerFilterByButtonController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByButtonController *vc = [[MKScannerFilterByButtonController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 2 && indexPath.row == 1) {
         //BXP-Tag
         id <MKScannerFilterByTagProtocol>protocol = self.protocol.tagProtocol;
-        MKScannerFilterByTagController *vc = [[MKScannerFilterByTagController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByTagController *vc = [[MKScannerFilterByTagController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 2 && indexPath.row == 2) {
         //PIR
         id <MKScannerFilterByPirProtocol>protocol = self.protocol.pirProtocol;
-        MKScannerFilterByPirController *vc = [[MKScannerFilterByPirController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByPirController *vc = [[MKScannerFilterByPirController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 3 && indexPath.row == 0) {
         //MK TOF
         id <MKScannerFilterByTofProtocol>protocol = self.protocol.tofProtocol;
-        MKScannerFilterByTofController *vc = [[MKScannerFilterByTofController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByTofController *vc = [[MKScannerFilterByTofController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 4 && indexPath.row == 0) {
         //Nano Beacon
         id <MKScannerFilterByNanoBeaconProtocol>protocol = self.protocol.nanoBeaconProtocol;
-        MKScannerFilterByNanoBeaconController *vc = [[MKScannerFilterByNanoBeaconController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByNanoBeaconController *vc = [[MKScannerFilterByNanoBeaconController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
     if (indexPath.section == 5 && indexPath.row == 0) {
         //Other
         id <MKScannerFilterByOtherProtocol>protocol = self.protocol.otherProtocol;
-        MKScannerFilterByOtherController *vc = [[MKScannerFilterByOtherController alloc] initWithProtocol:protocol];
-        [self.navigationController pushViewController:vc animated:YES];
+        if (protocol) {
+            MKScannerFilterByOtherController *vc = [[MKScannerFilterByOtherController alloc] initWithProtocol:protocol];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else {
+            [self.view showCentralToast:@"Protocol cannot be empty"];
+        }
         return;
     }
 }
