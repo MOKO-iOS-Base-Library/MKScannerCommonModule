@@ -88,25 +88,31 @@ mk_textSwitchCellDelegate>
 /// @param isOn 当前开关状态
 /// @param index 当前cell所在的index
 - (void)mk_textSwitchCellStatusChanged:(BOOL)isOn index:(NSInteger)index {
-    MKTextSwitchCellModel *cellModel = self.dataList[index];
-    cellModel.isOn = isOn;
     if (index == 0) {
         //Timestamp
+        MKTextSwitchCellModel *cellModel = self.dataList[0];
+        cellModel.isOn = isOn;
         self.protocol.timestamp = isOn;
         return;
     }
     if (index == 1) {
         //RAW Data-Advertising
+        MKTextSwitchCellModel *cellModel = self.dataList[1];
+        cellModel.isOn = isOn;
         self.protocol.rawData_advertising = isOn;
         return;
     }
     if (index == 2) {
         //RAW Data-Response
+        MKTextSwitchCellModel *cellModel = self.dataList[2];
+        cellModel.isOn = isOn;
         self.protocol.rawData_response = isOn;
         return;
     }
     if (index == 3) {
         //ADV data
+        MKTextSwitchCellModel *cellModel = self.dataList[1];
+        cellModel.isOn = isOn;
         self.protocol.adv_data = isOn;
         return;
     }
