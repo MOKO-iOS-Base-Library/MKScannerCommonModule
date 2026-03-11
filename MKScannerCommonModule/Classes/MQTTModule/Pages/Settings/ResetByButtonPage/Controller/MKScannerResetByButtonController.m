@@ -54,7 +54,6 @@ MKScannerResetByButtonCellDelegate>
     self.debugMode = YES;
 #endif
     [self loadSubViews];
-    [self loadSectionDatas];
     [self readDataFromDevice];
 }
 
