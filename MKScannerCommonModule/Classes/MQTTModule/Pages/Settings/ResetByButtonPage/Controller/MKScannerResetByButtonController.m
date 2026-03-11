@@ -19,21 +19,24 @@
 
 #import "MKScannerResetByButtonCell.h"
 
-@interface MKScannerResetByButtonController ()<UITableViewDelegate,
-UITableViewDataSource,
-MKScannerResetByButtonCellDelegate>
+typedef NS_ENUM(NSInteger, MKResetButtonType) {
+    MKResetButtonTypeDisable = 0,           // 禁用
+    MKResetButtonTypeAfterPowered = 1,       // 上电后1分钟内
+    MKResetButtonTypeAnyTime = 2             // 任意时间
+};
 
-@property (nonatomic, strong)MKBaseTableView *tableView;
+@interface MKScannerResetByButtonController () <UITableViewDelegate, UITableViewDataSource, MKScannerResetByButtonCellDelegate>
 
-@property (nonatomic, strong)NSMutableArray *section0List;
-
-@property (nonatomic, strong)NSMutableArray *section1List;
-
-@property (nonatomic, strong)id <MKScannerResetByButtonProtocol>protocol;
+@property (nonatomic, strong) MKBaseTableView *tableView;
+@property (nonatomic, strong) NSMutableArray *section0List;  // Disable选项（仅在支持且Debug模式下显示）
+@property (nonatomic, strong) NSMutableArray *section1List;  // 其他选项
+@property (nonatomic, strong) id<MKScannerResetByButtonProtocol> protocol;
 
 @end
 
 @implementation MKScannerResetByButtonController
+
+#pragma mark - Lifecycle
 
 - (void)dealloc {
     NSLog(@"MKScannerResetByButtonController销毁");
@@ -53,53 +56,71 @@ MKScannerResetByButtonCellDelegate>
 }
 
 #pragma mark - UITableViewDelegate
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 44.f;
 }
 
 #pragma mark - UITableViewDataSource
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    // 根据Disable选项是否显示，动态返回section数量
+    BOOL shouldShowDisable = [self shouldShowDisableSection];
+    return shouldShowDisable ? 2 : 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return (self.protocol.supportDisable ? self.section0List.count : 0);
+        if ([self shouldShowDisableSection]) {
+            return self.section0List.count;
+        } else {
+            return self.section1List.count;
+        }
     }
+    // section1
     return self.section1List.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        MKScannerResetByButtonCell *cell = [MKScannerResetByButtonCell initCellWithTableView:tableView];
-        cell.dataModel = self.section0List[indexPath.row];
-        cell.delegate = self;
-        return cell;
-    }
     MKScannerResetByButtonCell *cell = [MKScannerResetByButtonCell initCellWithTableView:tableView];
-    cell.dataModel = self.section1List[indexPath.row];
+    
+    if ([self shouldShowDisableSection]) {
+        if (indexPath.section == 0) {
+            cell.dataModel = self.section0List[indexPath.row];
+        } else {
+            cell.dataModel = self.section1List[indexPath.row];
+        }
+    } else {
+        // 不显示Disable时，所有数据都在section1List中
+        cell.dataModel = self.section1List[indexPath.row];
+    }
+    
     cell.delegate = self;
     return cell;
 }
 
 #pragma mark - MKScannerResetByButtonCellDelegate
+
 - (void)mk_scanner_resetByButtonCellAction:(NSInteger)index {
-    if (self.protocol.supportDisable) {
-        self.protocol.type = index;
-    }else {
-        if (index == 1) {
-            //Press in 1 minute after powered
-            self.protocol.type = 0;
-        }else if (index == 2) {
-            //Press any time
-            self.protocol.type = 1;
-        }
-    }
-    
+    // 根据选择的索引更新协议type
+    [self updateProtocolTypeWithSelectedIndex:index];
     [self configDataToDevice];
 }
 
-#pragma mark - Interface
+#pragma mark - Data Operations
+
+/// 判断是否需要显示Disable选项的section
+- (BOOL)shouldShowDisableSection {
+#ifdef DEBUG
+    // Debug模式下：协议支持时才显示
+    return self.protocol.supportDisable;
+#else
+    // Release模式下：永远不显示Disable选项
+    return NO;
+#endif
+}
+
+/// 从设备读取数据
 - (void)readDataFromDevice {
     [[MKHudManager share] showHUDWithTitle:@"Reading..." inView:self.view isPenetration:NO];
     @weakify(self);
@@ -107,35 +128,14 @@ MKScannerResetByButtonCellDelegate>
         @strongify(self);
         [[MKHudManager share] hide];
         [self loadSectionDatas];
-    }
-                            failedBlock:^(NSError * _Nonnull error) {
+    } failedBlock:^(NSError *error) {
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];
     }];
 }
 
-- (void)updateCellModel {
-    if (self.protocol.supportDisable) {
-        MKScannerResetByButtonCellModel *cellModel1 = self.section0List[0];
-        cellModel1.selected = (self.protocol.type == 0);
-        
-        MKScannerResetByButtonCellModel *cellModel2 = self.section1List[0];
-        cellModel2.selected = (self.protocol.type == 1);
-        
-        MKScannerResetByButtonCellModel *cellModel3 = self.section1List[1];
-        cellModel3.selected = (self.protocol.type == 2);
-    } else {
-        MKScannerResetByButtonCellModel *cellModel1 = self.section1List[0];
-        cellModel1.selected = (self.protocol.type == 0);
-        
-        MKScannerResetByButtonCellModel *cellModel2 = self.section1List[1];
-        cellModel2.selected = (self.protocol.type == 1);
-    }
-    
-    [self.tableView reloadData];
-}
-
+/// 配置数据到设备
 - (void)configDataToDevice {
     [[MKHudManager share] showHUDWithTitle:@"Config..." inView:self.view isPenetration:NO];
     @weakify(self);
@@ -143,56 +143,126 @@ MKScannerResetByButtonCellDelegate>
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:@"Setup succeed!"];
-        [self updateCellModel];
-    }
-                              failedBlock:^(NSError * _Nonnull error) {
+        [self updateCellSelectionState];
+    } failedBlock:^(NSError *error) {
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];
     }];
 }
 
-#pragma mark - loadSectionDatas
-- (void)loadSectionDatas {
-    [self loadSection0Datas];
-    [self loadSection1Datas];
+/// 更新Cell选中状态
+- (void)updateCellSelectionState {
+    // 更新section0的选中状态（如果存在）
+    if ([self shouldShowDisableSection] && self.section0List.count > 0) {
+        MKScannerResetByButtonCellModel *disableModel = self.section0List[0];
+        disableModel.selected = (self.protocol.type == MKResetButtonTypeDisable);
+    }
+    
+    // 更新section1的选中状态
+    for (MKScannerResetByButtonCellModel *model in self.section1List) {
+        model.selected = [self isCellSelectedForIndex:model.index];
+    }
     
     [self.tableView reloadData];
 }
 
-- (void)loadSection0Datas {
-    BOOL select = (self.protocol.supportDisable && (self.protocol.type == 0));
+/// 判断指定索引的Cell是否应该被选中
+- (BOOL)isCellSelectedForIndex:(NSInteger)index {
+    if (self.protocol.supportDisable) {
+        // 支持Disable时：type值直接对应选项
+        return (self.protocol.type == index);
+    } else {
+        // 不支持Disable时：需要映射关系
+        // type=0 -> AfterPowered(index=1)
+        // type=1 -> AnyTime(index=2)
+        if (index == MKResetButtonTypeAfterPowered) {
+            return (self.protocol.type == 0);
+        } else if (index == MKResetButtonTypeAnyTime) {
+            return (self.protocol.type == 1);
+        }
+        return NO;
+    }
+}
+
+/// 更新协议type值（根据用户选择的索引）
+- (void)updateProtocolTypeWithSelectedIndex:(NSInteger)selectedIndex {
+    if (self.protocol.supportDisable) {
+        // 支持Disable时：直接使用选择的索引作为type
+        self.protocol.type = selectedIndex;
+    } else {
+        // 不支持Disable时：需要映射
+        // AfterPowered(index=1) -> type=0
+        // AnyTime(index=2) -> type=1
+        if (selectedIndex == MKResetButtonTypeAfterPowered) {
+            self.protocol.type = 0;
+        } else if (selectedIndex == MKResetButtonTypeAnyTime) {
+            self.protocol.type = 1;
+        }
+    }
+}
+
+#pragma mark - Load Section Datas
+
+- (void)loadSectionDatas {
+    // 清空旧数据
+    [self.section0List removeAllObjects];
+    [self.section1List removeAllObjects];
+    
+    // 加载Disable选项（仅在需要显示时）
+    if ([self shouldShowDisableSection]) {
+        [self loadDisableSectionData];
+    }
+    
+    // 加载其他选项
+    [self loadOtherOptionsData];
+    
+    [self.tableView reloadData];
+}
+
+/// 加载Disable选项数据
+- (void)loadDisableSectionData {
+    BOOL selected = (self.protocol.type == MKResetButtonTypeDisable);
+    
     MKScannerResetByButtonCellModel *cellModel = [[MKScannerResetByButtonCellModel alloc] init];
-    cellModel.index = 0;
+    cellModel.index = MKResetButtonTypeDisable;
     cellModel.msg = @"Disable";
-    cellModel.selected = select;
+    cellModel.selected = selected;
     [self.section0List addObject:cellModel];
 }
 
-- (void)loadSection1Datas {
-    BOOL select1 = NO;
-    BOOL select2 = NO;
+/// 加载其他选项数据
+- (void)loadOtherOptionsData {
+    BOOL afterPoweredSelected = NO;
+    BOOL anyTimeSelected = NO;
+    
     if (self.protocol.supportDisable) {
-        select1 = (self.protocol.type == 1);
-        select2 = (self.protocol.type == 2);
+        // 支持Disable时：type直接对应
+        afterPoweredSelected = (self.protocol.type == MKResetButtonTypeAfterPowered);
+        anyTimeSelected = (self.protocol.type == MKResetButtonTypeAnyTime);
     } else {
-        select1 = (self.protocol.type == 0);
-        select2 = (self.protocol.type == 1);
+        // 不支持Disable时：需要映射
+        afterPoweredSelected = (self.protocol.type == 0);
+        anyTimeSelected = (self.protocol.type == 1);
     }
+    
+    // Press in 1 minute after powered
     MKScannerResetByButtonCellModel *cellModel1 = [[MKScannerResetByButtonCellModel alloc] init];
-    cellModel1.index = 1;
+    cellModel1.index = MKResetButtonTypeAfterPowered;
     cellModel1.msg = @"Press in 1 minute after powered";
-    cellModel1.selected = select1;
+    cellModel1.selected = afterPoweredSelected;
     [self.section1List addObject:cellModel1];
     
+    // Press any time
     MKScannerResetByButtonCellModel *cellModel2 = [[MKScannerResetByButtonCellModel alloc] init];
-    cellModel2.index = 2;
+    cellModel2.index = MKResetButtonTypeAnyTime;
     cellModel2.msg = @"Press any time";
-    cellModel2.selected = select2;
+    cellModel2.selected = anyTimeSelected;
     [self.section1List addObject:cellModel2];
 }
 
-#pragma mark - UI
+#pragma mark - UI Setup
+
 - (void)loadSubViews {
     self.defaultTitle = @"Reset device by button";
     [self.view addSubview:self.tableView];
@@ -204,13 +274,13 @@ MKScannerResetByButtonCellDelegate>
     }];
 }
 
-#pragma mark - getter
+#pragma mark - Getters
+
 - (MKBaseTableView *)tableView {
     if (!_tableView) {
         _tableView = [[MKBaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        
     }
     return _tableView;
 }
