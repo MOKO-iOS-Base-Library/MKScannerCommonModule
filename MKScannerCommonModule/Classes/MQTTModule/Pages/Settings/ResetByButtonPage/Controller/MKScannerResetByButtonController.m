@@ -29,8 +29,6 @@ MKScannerResetByButtonCellDelegate>
 
 @property (nonatomic, strong)NSMutableArray *section1List;
 
-@property (nonatomic, assign)BOOL debugMode;
-
 @property (nonatomic, strong)id <MKScannerResetByButtonProtocol>protocol;
 
 @end
@@ -50,9 +48,6 @@ MKScannerResetByButtonCellDelegate>
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-#ifdef DEBUG
-    self.debugMode = YES;
-#endif
     [self loadSubViews];
     [self readDataFromDevice];
 }
@@ -69,7 +64,7 @@ MKScannerResetByButtonCellDelegate>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return (self.debugMode ? self.section0List.count : 0);
+        return (self.protocol.supportDisable ? self.section0List.count : 0);
     }
     return self.section1List.count;
 }
@@ -89,7 +84,17 @@ MKScannerResetByButtonCellDelegate>
 
 #pragma mark - MKScannerResetByButtonCellDelegate
 - (void)mk_scanner_resetByButtonCellAction:(NSInteger)index {
-    self.protocol.type = index;
+    if (self.protocol.supportDisable) {
+        self.protocol.type = index;
+    }else {
+        if (index == 1) {
+            //Press in 1 minute after powered
+            self.protocol.type = 0;
+        }else if (index == 2) {
+            //Press any time
+            self.protocol.type = 1;
+        }
+    }
     
     [self configDataToDevice];
 }
@@ -110,6 +115,27 @@ MKScannerResetByButtonCellDelegate>
     }];
 }
 
+- (void)updateCellModel {
+    if (self.protocol.supportDisable) {
+        MKScannerResetByButtonCellModel *cellModel1 = self.section0List[0];
+        cellModel1.selected = (self.protocol.type == 0);
+        
+        MKScannerResetByButtonCellModel *cellModel2 = self.section1List[0];
+        cellModel2.selected = (self.protocol.type == 1);
+        
+        MKScannerResetByButtonCellModel *cellModel3 = self.section1List[1];
+        cellModel3.selected = (self.protocol.type == 2);
+    } else {
+        MKScannerResetByButtonCellModel *cellModel1 = self.section1List[0];
+        cellModel1.selected = (self.protocol.type == 0);
+        
+        MKScannerResetByButtonCellModel *cellModel2 = self.section1List[1];
+        cellModel2.selected = (self.protocol.type == 1);
+    }
+    
+    [self.tableView reloadData];
+}
+
 - (void)configDataToDevice {
     [[MKHudManager share] showHUDWithTitle:@"Config..." inView:self.view isPenetration:NO];
     @weakify(self);
@@ -117,6 +143,7 @@ MKScannerResetByButtonCellDelegate>
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:@"Setup succeed!"];
+        [self updateCellModel];
     }
                               failedBlock:^(NSError * _Nonnull error) {
         @strongify(self);
@@ -134,24 +161,34 @@ MKScannerResetByButtonCellDelegate>
 }
 
 - (void)loadSection0Datas {
+    BOOL select = (self.protocol.supportDisable && (self.protocol.type == 0));
     MKScannerResetByButtonCellModel *cellModel = [[MKScannerResetByButtonCellModel alloc] init];
     cellModel.index = 0;
     cellModel.msg = @"Disable";
-    cellModel.selected = (index == 0);
+    cellModel.selected = select;
     [self.section0List addObject:cellModel];
 }
 
 - (void)loadSection1Datas {
+    BOOL select1 = NO;
+    BOOL select2 = NO;
+    if (self.protocol.supportDisable) {
+        select1 = (self.protocol.type == 1);
+        select2 = (self.protocol.type == 2);
+    } else {
+        select1 = (self.protocol.type == 0);
+        select2 = (self.protocol.type == 1);
+    }
     MKScannerResetByButtonCellModel *cellModel1 = [[MKScannerResetByButtonCellModel alloc] init];
     cellModel1.index = 1;
     cellModel1.msg = @"Press in 1 minute after powered";
-    cellModel1.selected = (index == 1);
+    cellModel1.selected = select1;
     [self.section1List addObject:cellModel1];
     
     MKScannerResetByButtonCellModel *cellModel2 = [[MKScannerResetByButtonCellModel alloc] init];
     cellModel2.index = 2;
     cellModel2.msg = @"Press any time";
-    cellModel2.selected = (index == 2);
+    cellModel2.selected = select2;
     [self.section1List addObject:cellModel2];
 }
 
