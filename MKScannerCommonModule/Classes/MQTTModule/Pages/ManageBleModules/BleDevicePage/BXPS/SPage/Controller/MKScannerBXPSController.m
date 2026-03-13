@@ -249,7 +249,7 @@ MKScannerButtonFirmwareCellDelegate>
         return self.section3List.count;
     }
     if (section == 4) {
-        return (self.protocol.supportBatteryMode ? self.section3List.count : 0);
+        return (self.protocol.supportBatteryMode ? self.section4List.count : 0);
     }
     
     return 0;
