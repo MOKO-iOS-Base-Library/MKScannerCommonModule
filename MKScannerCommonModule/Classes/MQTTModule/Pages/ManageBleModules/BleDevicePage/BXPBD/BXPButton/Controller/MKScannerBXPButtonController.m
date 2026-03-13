@@ -703,6 +703,7 @@ MKScannerPressEventCountCellDelegate>
     cellModel.index = 0;
     cellModel.msg = @"Battery ADV mode";
     cellModel.dataList = @[@"Battery voltage",@"Battery percentage"];
+    cellModel.buttonLabelFont = MKFont(14.f);
     [self.section9List addObject:cellModel];
 }
 

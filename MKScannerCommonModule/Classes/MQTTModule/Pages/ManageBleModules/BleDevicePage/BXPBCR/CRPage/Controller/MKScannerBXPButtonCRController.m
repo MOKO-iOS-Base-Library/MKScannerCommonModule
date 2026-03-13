@@ -367,6 +367,8 @@ MKScannerPressEventCountCellDelegate>
     [self.protocol readDeviceDatasWithSucBlock:^(MKScannerBXPButtonCRReadModel * _Nonnull readModel) {
         @strongify(self);
         [[MKHudManager share] hide];
+        self.readModel = nil;
+        self.readModel = readModel;
         if (self.protocol.supportBatteryMode) {
             [self readBatteryAdvMode];
             return;
@@ -645,6 +647,7 @@ MKScannerPressEventCountCellDelegate>
     cellModel.index = 0;
     cellModel.msg = @"Battery ADV mode";
     cellModel.dataList = @[@"Battery voltage",@"Battery percentage"];
+    cellModel.buttonLabelFont = MKFont(14.f);
     [self.section8List addObject:cellModel];
 }
 
