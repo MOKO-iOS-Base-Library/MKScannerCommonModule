@@ -22,6 +22,8 @@
 
 #import "MKScannerRemoteReminderCell.h"
 
+#import "MKScannerBXPSReminderModel.h"
+
 @interface MKScannerBXPSReminderController ()<UITableViewDelegate,
 UITableViewDataSource,
 MKTextFieldCellDelegate,
@@ -35,6 +37,12 @@ MKScannerRemoteReminderCellDelegate>
 @property (nonatomic, strong)NSMutableArray *section1List;
 
 @property (nonatomic, strong)NSMutableArray *section2List;
+
+@property (nonatomic, strong)NSMutableArray *section3List;
+
+@property (nonatomic, strong)NSMutableArray *section4List;
+
+@property (nonatomic, strong)MKScannerBXPSReminderModel *dataModel;
 
 @property (nonatomic, strong)id <MKScannerBXPSReminderProtocol>protocol;
 
@@ -72,7 +80,7 @@ MKScannerRemoteReminderCellDelegate>
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -85,6 +93,13 @@ MKScannerRemoteReminderCellDelegate>
     if (section == 2) {
         return self.section2List.count;
     }
+    if (section == 3) {
+        return (self.protocol.supportBuzzer ? self.section3List.count : 0);
+    }
+    if (section == 4) {
+        return (self.protocol.supportBuzzer ? self.section4List.count : 0);
+    }
+    
     return 0;
 }
 
@@ -102,8 +117,21 @@ MKScannerRemoteReminderCellDelegate>
         cell.delegate = self;
         return cell;
     }
+    if (indexPath.section == 2) {
+        MKTextFieldCell *cell = [MKTextFieldCell initCellWithTableView:tableView];
+        cell.dataModel = self.section2List[indexPath.row];
+        cell.delegate = self;
+        return cell;
+    }
+    if (indexPath.section == 3) {
+        //Buzzer notification
+        MKScannerRemoteReminderCell *cell = [MKScannerRemoteReminderCell initCellWithTableView:tableView];
+        cell.dataModel = self.section3List[indexPath.row];
+        cell.delegate = self;
+        return cell;
+    }
     MKTextFieldCell *cell = [MKTextFieldCell initCellWithTableView:tableView];
-    cell.dataModel = self.section2List[indexPath.row];
+    cell.dataModel = self.section4List[indexPath.row];
     cell.delegate = self;
     return cell;
 }
@@ -117,10 +145,10 @@ MKScannerRemoteReminderCellDelegate>
                         dataListIndex:(NSInteger)dataListIndex
                                 value:(NSString *)value {
     if (index == 0) {
-        //Color
+        //LED Color
         MKTextButtonCellModel *cellModel = self.section1List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.protocol.color = dataListIndex;
+        self.dataModel.color = dataListIndex;
         return;
     }
 }
@@ -132,15 +160,29 @@ MKScannerRemoteReminderCellDelegate>
 - (void)mk_deviceTextCellValueChanged:(NSInteger)index textValue:(NSString *)value {
     if (index == 0) {
         //Blinking time
-        self.protocol.blinkingTime = value;
+        self.dataModel.blinkingTime = value;
         MKTextFieldCellModel *cellModel = self.section2List[0];
         cellModel.textFieldValue = value;
         return;
     }
     if (index == 1) {
         //Blinking interval
-        self.protocol.blinkingInterval = value;
+        self.dataModel.blinkingInterval = value;
         MKTextFieldCellModel *cellModel = self.section2List[1];
+        cellModel.textFieldValue = value;
+        return;
+    }
+    if (index == 2) {
+        //Ring time
+        self.dataModel.ringingTime = value;
+        MKTextFieldCellModel *cellModel = self.section4List[0];
+        cellModel.textFieldValue = value;
+        return;
+    }
+    if (index == 3) {
+        //Ring interval
+        self.dataModel.ringingInterval = value;
+        MKTextFieldCellModel *cellModel = self.section4List[1];
         cellModel.textFieldValue = value;
         return;
     }
@@ -152,27 +194,59 @@ MKScannerRemoteReminderCellDelegate>
         [self reminderLED];
         return;
     }
+    if (index == 1) {
+        [self reminderBuzzer];
+        return;
+    }
 }
 
 #pragma mark - interface
 
 - (void)reminderLED {
-    if (!ValidStr(self.protocol.blinkingTime) || [self.protocol.blinkingTime integerValue] < 1 || [self.protocol.blinkingTime integerValue] > 600) {
+    if (!ValidStr(self.dataModel.blinkingTime) || [self.dataModel.blinkingTime integerValue] < 1 || [self.dataModel.blinkingTime integerValue] > 600) {
         [self.view showCentralToast:@"Blink Time Error"];
         return ;
     }
-    if (!ValidStr(self.protocol.blinkingInterval) || [self.protocol.blinkingInterval integerValue] < 1 || [self.protocol.blinkingInterval integerValue] > 100) {
+    if (!ValidStr(self.dataModel.blinkingInterval) || [self.dataModel.blinkingInterval integerValue] < 1 || [self.dataModel.blinkingInterval integerValue] > 100) {
         [self.view showCentralToast:@"Blink Interval Error"];
         return ;
     }
     [[MKHudManager share] showHUDWithTitle:@"Config..." inView:self.view isPenetration:NO];
     @weakify(self);
-    [self.protocol configDataWithSucBlock:^{
+    [self.protocol ledRemoteReminderWithColor:self.dataModel.color
+                                 blinkingTime:[self.dataModel.blinkingTime integerValue]
+                             blinkingInterval:[self.dataModel.blinkingInterval integerValue]
+                                     sucBlock:^{
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:@"Success"];
     }
-                              failedBlock:^(NSError * _Nonnull error) {
+                                  failedBlock:^(NSError * _Nonnull error) {
+        @strongify(self);
+        [[MKHudManager share] hide];
+        [self.view showCentralToast:error.userInfo[@"errorInfo"]];
+    }];
+}
+
+- (void)reminderBuzzer {
+    if (!ValidStr(self.dataModel.ringingTime) || [self.dataModel.ringingTime integerValue] < 1 || [self.dataModel.ringingTime integerValue] > 600) {
+        [self.view showCentralToast:@"Ring Time Error"];
+        return ;
+    }
+    if (!ValidStr(self.dataModel.ringingInterval) || [self.dataModel.ringingInterval integerValue] < 1 || [self.dataModel.ringingInterval integerValue] > 100) {
+        [self.view showCentralToast:@"Ring Interval Error"];
+        return ;
+    }
+    [[MKHudManager share] showHUDWithTitle:@"Config..." inView:self.view isPenetration:NO];
+    @weakify(self);
+    [self.protocol buzzerRemoteReminderWithRingingTime:[self.dataModel.ringingTime integerValue]
+                                       ringingInterval:[self.dataModel.ringingInterval integerValue]
+                                              sucBlock:^{
+        @strongify(self);
+        [[MKHudManager share] hide];
+        [self.view showCentralToast:@"Success"];
+    }
+                                           failedBlock:^(NSError * _Nonnull error) {
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];
@@ -184,6 +258,8 @@ MKScannerRemoteReminderCellDelegate>
     [self loadSection0Datas];
     [self loadSection1Datas];
     [self loadSection2Datas];
+    [self loadSection3Datas];
+    [self loadSection4Datas];
     
     [self.tableView reloadData];
 }
@@ -208,7 +284,7 @@ MKScannerRemoteReminderCellDelegate>
     cellModel1.index = 0;
     cellModel1.msg = @"Blinking time";
     cellModel1.textPlaceholder = @"1~600";
-    cellModel1.textFieldValue = self.protocol.blinkingTime;
+    cellModel1.textFieldValue = self.dataModel.blinkingTime;
     cellModel1.textFieldType = mk_realNumberOnly;
     cellModel1.unit = @"sec";
     cellModel1.maxLength = 3;
@@ -218,11 +294,40 @@ MKScannerRemoteReminderCellDelegate>
     cellModel2.index = 1;
     cellModel2.msg = @"Blinking interval";
     cellModel2.textPlaceholder = @"1~100";
-    cellModel2.textFieldValue = self.protocol.blinkingInterval;
+    cellModel2.textFieldValue = self.dataModel.blinkingInterval;
     cellModel2.textFieldType = mk_realNumberOnly;
     cellModel2.unit = @"x100ms";
     cellModel2.maxLength = 3;
     [self.section2List addObject:cellModel2];
+}
+
+- (void)loadSection3Datas {
+    MKScannerRemoteReminderCellModel *cellModel = [[MKScannerRemoteReminderCellModel alloc] init];
+    cellModel.msg = @"Buzzer notification";
+    cellModel.index = 1;
+    [self.section3List addObject:cellModel];
+}
+
+- (void)loadSection4Datas {
+    MKTextFieldCellModel *cellModel1 = [[MKTextFieldCellModel alloc] init];
+    cellModel1.index = 2;
+    cellModel1.msg = @"Ring time";
+    cellModel1.textPlaceholder = @"1~600";
+    cellModel1.textFieldValue = self.dataModel.ringingTime;
+    cellModel1.textFieldType = mk_realNumberOnly;
+    cellModel1.unit = @"sec";
+    cellModel1.maxLength = 3;
+    [self.section4List addObject:cellModel1];
+    
+    MKTextFieldCellModel *cellModel2 = [[MKTextFieldCellModel alloc] init];
+    cellModel2.index = 3;
+    cellModel2.msg = @"Ring interval";
+    cellModel2.textPlaceholder = @"1~100";
+    cellModel2.textFieldValue = self.dataModel.ringingInterval;
+    cellModel2.textFieldType = mk_realNumberOnly;
+    cellModel2.unit = @"x100ms";
+    cellModel2.maxLength = 3;
+    [self.section4List addObject:cellModel2];
 }
 
 #pragma mark - UI
@@ -269,6 +374,27 @@ MKScannerRemoteReminderCellDelegate>
         _section2List = [NSMutableArray array];
     }
     return _section2List;
+}
+
+- (NSMutableArray *)section3List {
+    if (!_section3List) {
+        _section3List = [NSMutableArray array];
+    }
+    return _section3List;
+}
+
+- (NSMutableArray *)section4List {
+    if (!_section4List) {
+        _section4List = [NSMutableArray array];
+    }
+    return _section4List;
+}
+
+- (MKScannerBXPSReminderModel *)dataModel {
+    if (!_dataModel) {
+        _dataModel = [[MKScannerBXPSReminderModel alloc] init];
+    }
+    return _dataModel;
 }
 
 @end

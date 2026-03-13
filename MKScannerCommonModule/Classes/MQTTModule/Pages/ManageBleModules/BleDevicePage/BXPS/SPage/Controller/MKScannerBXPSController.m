@@ -21,6 +21,7 @@
 #import "MKTableSectionLineHeader.h"
 #import "MKAlertView.h"
 #import "MKSettingTextCell.h"
+#import "MKTextButtonCell.h"
 
 #import "MKScannerButtonFirmwareCell.h"
 
@@ -35,6 +36,7 @@
 
 @interface MKScannerBXPSController ()<UITableViewDelegate,
 UITableViewDataSource,
+MKTextButtonCellDelegate,
 MKScannerButtonFirmwareCellDelegate>
 
 @property (nonatomic, strong)MKBaseTableView *tableView;
@@ -47,11 +49,15 @@ MKScannerButtonFirmwareCellDelegate>
 
 @property (nonatomic, strong)NSMutableArray *section3List;
 
+@property (nonatomic, strong)NSMutableArray *section4List;
+
 @property (nonatomic, strong)NSMutableArray *headerList;
 
 @property (nonatomic, strong)id <MKScannerBXPSProtocol>protocol;
 
-@property (nonatomic, strong)NSDictionary *bxpStatusDic;
+@property (nonatomic, strong)MKScannerBXPSReadModel *readModel;
+
+@property (nonatomic, assign)NSInteger batteryMode;
 
 @end
 
@@ -242,6 +248,9 @@ MKScannerButtonFirmwareCellDelegate>
     if (section == 3) {
         return self.section3List.count;
     }
+    if (section == 4) {
+        return (self.protocol.supportBatteryMode ? self.section3List.count : 0);
+    }
     
     return 0;
 }
@@ -263,9 +272,30 @@ MKScannerButtonFirmwareCellDelegate>
         cell.dataModel =  self.section2List[indexPath.row];
         return cell;
     }
-    MKSettingTextCell *cell = [MKSettingTextCell initCellWithTableView:tableView];
-    cell.dataModel =  self.section3List[indexPath.row];
+    if (indexPath.section == 3) {
+        MKSettingTextCell *cell = [MKSettingTextCell initCellWithTableView:tableView];
+        cell.dataModel =  self.section3List[indexPath.row];
+        return cell;
+    }
+    MKTextButtonCell *cell = [MKTextButtonCell initCellWithTableView:tableView];
+    cell.dataModel =  self.section4List[indexPath.row];
+    cell.delegate = self;
     return cell;
+}
+
+#pragma mark - MKTextButtonCellDelegate
+/// 右侧按钮点击触发的回调事件
+/// @param index 当前cell所在的index
+/// @param dataListIndex 点击按钮选中的dataList里面的index
+/// @param value dataList[dataListIndex]
+- (void)mk_loraTextButtonCellSelected:(NSInteger)index
+                        dataListIndex:(NSInteger)dataListIndex
+                                value:(NSString *)value {
+    if (index == 0) {
+        //Battery ADV mode
+        [self configBatteryAdvMode:dataListIndex];
+        return;
+    }
 }
 
 #pragma mark - MKScannerButtonFirmwareCellDelegate
@@ -288,17 +318,17 @@ MKScannerButtonFirmwareCellDelegate>
 - (void)readDatasFromDevice {
     [[MKHudManager share] showHUDWithTitle:@"Reading..." inView:self.view isPenetration:NO];
     @weakify(self);
-    [self.protocol readConnectedStatusWithSucBlock:^(id  _Nonnull returnData) {
+    [self.protocol readDeviceDatasWithSucBlock:^(MKScannerBXPSReadModel * _Nonnull readModel) {
         @strongify(self);
         [[MKHudManager share] hide];
-        if ([returnData[@"data"][@"result_code"] integerValue] != 0) {
-            [self.view showCentralToast:@"Read Failed"];
+        self.readModel = nil;
+        self.readModel = readModel;
+        if (self.protocol.supportBatteryMode) {
+            [self readBatteryAdvMode];
             return;
         }
-        self.bxpStatusDic = returnData;
         [self updateStatusDatas];
-    }
-                                       failedBlock:^(NSError * _Nonnull error) {
+    } failedBlock:^(NSError * _Nonnull error) {
         @strongify(self);
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];
@@ -335,9 +365,47 @@ MKScannerButtonFirmwareCellDelegate>
     }];
 }
 
+- (void)readBatteryAdvMode {
+    [[MKHudManager share] showHUDWithTitle:@"Reading..." inView:self.view isPenetration:NO];
+    @weakify(self);
+    [self.protocol readBatteryAdvModeWithSucBlock:^(NSInteger mode) {
+        @strongify(self);
+        [[MKHudManager share] hide];
+        self.batteryMode = mode;
+        MKTextButtonCellModel *cellModel = self.section4List[0];
+        cellModel.dataListIndex = mode;
+        [self updateStatusDatas];
+    }
+                                      failedBlock:^(NSError * _Nonnull error) {
+        @strongify(self);
+        [[MKHudManager share] hide];
+        [self.view showCentralToast:error.userInfo[@"errorInfo"]];
+    }];
+}
+
+- (void)configBatteryAdvMode:(NSInteger)mode {
+    [[MKHudManager share] showHUDWithTitle:@"Reading..." inView:self.view isPenetration:NO];
+    @weakify(self);
+    [self.protocol configBatteryAdvMode:mode
+                               sucBlock:^{
+        @strongify(self);
+        [[MKHudManager share] hide];
+        [self.view showCentralToast:@"Success!"];
+    }
+                            failedBlock:^(NSError * _Nonnull error) {
+        @strongify(self);
+        [[MKHudManager share] hide];
+        [self.view showCentralToast:error.userInfo[@"errorInfo"]];
+    }];
+}
+
 - (void)updateStatusDatas {
     MKNormalTextCellModel *cellModel1 = self.section2List[3];
-    cellModel1.rightMsg = [NSString stringWithFormat:@"%@%@",self.bxpStatusDic[@"data"][@"battery_level"],@"%"];
+    if (ValidStr(self.readModel.batteryLevel)) {
+        cellModel1.rightMsg = [NSString stringWithFormat:@"%@ %@/%@ %@",self.readModel.batteryVoltage,@"mV",self.readModel.batteryLevel,@"%"];
+    }else {
+        cellModel1.rightMsg = [self.readModel.batteryVoltage stringByAppendingString:@" mV"];
+    }
     
     [self.tableView reloadData];
 }
@@ -385,8 +453,9 @@ MKScannerButtonFirmwareCellDelegate>
     [self loadSection1Datas];
     [self loadSection2Datas];
     [self loadSection3Datas];
+    [self loadSection4Datas];
     
-    for (NSInteger i = 0; i < 4; i ++) {
+    for (NSInteger i = 0; i < 5; i ++) {
         MKTableSectionLineHeaderModel *headerModel = [[MKTableSectionLineHeaderModel alloc] init];
         [self.headerList addObject:headerModel];
     }
@@ -432,7 +501,7 @@ MKScannerButtonFirmwareCellDelegate>
     [self.section2List addObject:cellModel3];
     
     MKNormalTextCellModel *cellModel4 = [[MKNormalTextCellModel alloc] init];
-    cellModel4.leftMsg = @"Battery percent";
+    cellModel4.leftMsg = @"Battery voltage/level";
     cellModel4.rightMsg = @"";
     [self.section2List addObject:cellModel4];
     
@@ -499,6 +568,15 @@ MKScannerButtonFirmwareCellDelegate>
     [self.section3List addObject:cellModel8];
 }
 
+- (void)loadSection4Datas {
+    MKTextButtonCellModel *cellModel = [[MKTextButtonCellModel alloc] init];
+    cellModel.index = 0;
+    cellModel.msg = @"Battery ADV mode";
+    cellModel.dataList = @[@"Battery voltage",@"Battery percentage"];
+    cellModel.buttonLabelFont = MKFont(14.f);
+    [self.section4List addObject:cellModel];
+}
+
 #pragma mark - UI
 - (void)loadSubViews {
     self.defaultTitle = self.protocol.title;
@@ -549,6 +627,13 @@ MKScannerButtonFirmwareCellDelegate>
         _section3List = [NSMutableArray array];
     }
     return _section3List;
+}
+
+- (NSMutableArray *)section4List {
+    if (!_section4List) {
+        _section4List = [NSMutableArray array];
+    }
+    return _section4List;
 }
 
 - (NSMutableArray *)headerList {

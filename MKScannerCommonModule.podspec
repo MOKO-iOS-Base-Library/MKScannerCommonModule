@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
-  s.version          = '0.0.12'
+  s.version          = '0.0.13'
   s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC
@@ -566,6 +566,10 @@ Pod::Spec.new do |s|
           
           # BXPS提醒页面
           sssss.subspec 'BXPSReminderPage' do |ssssss|
+            ssssss.subspec 'Model' do |sssssss|
+              sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Model/**'
+            end
+            
             ssssss.subspec 'Protocol' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol/**'
             end
@@ -573,6 +577,7 @@ Pod::Spec.new do |s|
             ssssss.subspec 'Controller' do |sssssss|
               sssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Controller/**'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Protocol'
+              sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/CommonPage/BXPSReminderPage/Model'
             end
           end
           
@@ -793,8 +798,13 @@ Pod::Spec.new do |s|
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/AdvParamsPage'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HallCountPage'
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/HistoricalTHDataPage'
+              sssssss.subspec 'Model' do |ssssssss|
+                ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Model/**'
+              end
+              
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Protocol/**'
+                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPS/SPage/Model'
               end
               
               sssssss.subspec 'Controller' do |ssssssss|
