@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MKScannerBXPButtonReadModel : NSObject
 
-/// 当前显示的是否是百分比
-@property (nonatomic, assign)BOOL isBtteryLevel;
+/// mV
+@property (nonatomic, copy)NSString *batteryVoltage;
 
-/// isBtteryLevel=YES，则100%，isBtteryLevel=NO则3310mV
-@property (nonatomic, copy)NSString *battery;
+/// %
+@property (nonatomic, copy)NSString *batteryLevel;
 
 @property (nonatomic, copy)NSString *singleAlarmNum;
 

@@ -466,7 +466,7 @@ MKScannerPressEventCountCellDelegate>
                                sucBlock:^{
         @strongify(self);
         [[MKHudManager share] hide];
-        [self readDatasFromDevice];
+        [self.view showCentralToast:@"Success!"];
     }
                             failedBlock:^(NSError * _Nonnull error) {
         @strongify(self);
@@ -477,8 +477,11 @@ MKScannerPressEventCountCellDelegate>
 
 - (void)updateStatusDatas {
     MKNormalTextCellModel *cellModel1 = self.section4List[0];
-    cellModel1.leftMsg = (self.readModel.isBtteryLevel ? @"Battery level" : @"Battery voltage");
-    cellModel1.rightMsg = [self.readModel.battery stringByAppendingString:(self.readModel.isBtteryLevel ? @"%" : @"mV")];
+    if (ValidStr(self.readModel.batteryLevel)) {
+        cellModel1.rightMsg = [NSString stringWithFormat:@"%@ %@/%@ %@",self.readModel.batteryVoltage,@"mV",self.readModel.batteryLevel,@"%"];
+    }else {
+        cellModel1.rightMsg = [self.readModel.batteryVoltage stringByAppendingString:@" mV"];
+    }
     
     MKScannerPressEventCountCellModel *cellModel2 = self.section5List[0];
     cellModel2.count = self.readModel.singleAlarmNum;
@@ -645,7 +648,7 @@ MKScannerPressEventCountCellDelegate>
 
 - (void)loadSection4Datas {
     MKNormalTextCellModel *cellModel = [[MKNormalTextCellModel alloc] init];
-    cellModel.leftMsg = @"Battery voltage";
+    cellModel.leftMsg = @"Battery voltage/level";
     [self.section4List addObject:cellModel];
 }
 
