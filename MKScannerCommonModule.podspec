@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
-  s.version          = '0.0.9'
+  s.version          = '0.0.10'
   s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC
@@ -646,8 +646,13 @@ Pod::Spec.new do |s|
           sssss.subspec 'BXPBCR' do |ssssss|
             ssssss.subspec 'CRPage' do |sssssss|
               sssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/EventAlarmPage'
+              sssssss.subspec 'Model' do |ssssssss|
+                ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Model/**'
+              end
+              
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol/**'
+                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Model'
               end
               
               sssssss.subspec 'Controller' do |ssssssss|
@@ -676,8 +681,13 @@ Pod::Spec.new do |s|
           # BXPBD特定页面
           sssss.subspec 'BXPBD' do |ssssss|
             ssssss.subspec 'BXPButton' do |sssssss|
+              sssssss.subspec 'Model' do |ssssssss|
+                ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Model/**'
+              end
+              
               sssssss.subspec 'Protocol' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol/**'
+                ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Model'
               end
               
               sssssss.subspec 'Controller' do |ssssssss|

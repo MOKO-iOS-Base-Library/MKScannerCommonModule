@@ -1,6 +1,6 @@
 {
   "name": "MKScannerCommonModule",
-  "version": "0.0.4",
+  "version": "0.0.10",
   "summary": "Common scanner module for BLE and MQTT device management",
   "description": "MKScannerCommonModule provides a comprehensive set of reusable components for scanning,\nmanaging, and configuring BLE and MQTT devices. It includes filter pages, device info pages,\nnearby WiFi scanning, and various BXP device management features.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git",
-    "tag": "0.0.4"
+    "tag": "0.0.10"
   },
   "platforms": {
     "ios": "14.0"
@@ -910,8 +910,17 @@
                           },
                           "subspecs": [
                             {
+                              "name": "Model",
+                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Model/**"
+                            },
+                            {
                               "name": "Protocol",
-                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol/**"
+                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Protocol/**",
+                              "dependencies": {
+                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBCR/CRPage/Model": [
+
+                                ]
+                              }
                             },
                             {
                               "name": "Controller",
@@ -958,8 +967,17 @@
                           "name": "BXPButton",
                           "subspecs": [
                             {
+                              "name": "Model",
+                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Model/**"
+                            },
+                            {
                               "name": "Protocol",
-                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol/**"
+                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol/**",
+                              "dependencies": {
+                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Model": [
+
+                                ]
+                              }
                             },
                             {
                               "name": "Controller",

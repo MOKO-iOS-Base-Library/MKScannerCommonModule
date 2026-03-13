@@ -85,13 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00A678E32F4FE0A800CF76FF /* Fuctions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fuctions;
-			sourceTree = "<group>";
-		};
 		514FC2430449875ABA3CC026 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +130,6 @@
 		6003F593195388D20070C39A /* Example for MKScannerCommonModule */ = {
 			isa = PBXGroup;
 			children = (
-				00A678E32F4FE0A800CF76FF /* Fuctions */,
 				6003F59C195388D20070C39A /* MKAppDelegate.h */,
 				6003F59D195388D20070C39A /* MKAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
