@@ -705,7 +705,7 @@ MKScannerPressEventCountCellDelegate>
     MKTextButtonCellModel *cellModel = [[MKTextButtonCellModel alloc] init];
     cellModel.index = 0;
     cellModel.msg = @"Battery ADV mode";
-    cellModel.dataList = @[@"Battery voltage",@"Battery percentage"];
+    cellModel.dataList = @[@"Battery percentage",@"Battery voltage"];
     cellModel.buttonLabelFont = MKFont(14.f);
     [self.section9List addObject:cellModel];
 }
