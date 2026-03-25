@@ -132,9 +132,10 @@ MKScannerBXPAdvParamsCellDelegate>
         cellModel.slotIndex = [dic[@"channel"] integerValue];
         MKScannerBXPAdvParamsCellSlotType slotType = [self fetchSlotType:[dic[@"channel_type"] integerValue]];
         cellModel.slotType = slotType;
+        cellModel.bxpTag = self.protocol.isTag;
         if (slotType != MKScannerBXPAdvParamsCellSlotTypeNoData) {
             cellModel.triggerType = [dic[@"trigger_type"] integerValue];
-            cellModel.interval = [NSString stringWithFormat:@"%ld",(long)([dic[@"adv_interval"] integerValue] / (self.protocol.multiples > 0 ? self.protocol.multiples : 1))];
+            cellModel.interval = [NSString stringWithFormat:@"%ld",(long)([dic[@"adv_interval"] integerValue] / (self.protocol.isTag? 1 : 100))];
             cellModel.txPower = [self fetchTxPower:[dic[@"tx_power"] integerValue]];
         }
         [self.dataList addObject:cellModel];
