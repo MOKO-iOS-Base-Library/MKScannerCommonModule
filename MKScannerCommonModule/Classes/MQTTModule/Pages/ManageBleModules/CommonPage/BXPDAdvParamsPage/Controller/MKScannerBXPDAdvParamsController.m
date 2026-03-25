@@ -136,7 +136,11 @@ MKScannerBXPAdvParamsCellDelegate>
         if (slotType != MKScannerBXPAdvParamsCellSlotTypeNoData) {
             cellModel.triggerType = [dic[@"trigger_type"] integerValue];
             cellModel.interval = [NSString stringWithFormat:@"%ld",(long)([dic[@"adv_interval"] integerValue] / (self.protocol.isTag? 1 : 100))];
-            cellModel.txPower = [self fetchTxPower:[dic[@"tx_power"] integerValue]];
+            if (self.protocol.isTag) {
+                cellModel.txPower = [self fetchTagTxPower:[dic[@"tx_power"] integerValue]];
+            } else {
+                cellModel.txPower = [self fetchTxPower:[dic[@"tx_power"] integerValue]];
+            }
         }
         [self.dataList addObject:cellModel];
     }
@@ -170,6 +174,9 @@ MKScannerBXPAdvParamsCellDelegate>
     if (slotType == 0x70) {
         return MKScannerBXPAdvParamsCellSlotTypeHT;
     }
+    if (slotType == 0x80) {
+        return MKScannerBXPAdvParamsCellSlotTypeTag;
+    }
     if (slotType == 0xff) {
         return MKScannerBXPAdvParamsCellSlotTypeNoData;
     }
@@ -199,6 +206,37 @@ MKScannerBXPAdvParamsCellDelegate>
         return 7;
     }
     if (txPower == 4) {
+        return 8;
+    }
+    return 0;
+}
+
+- (NSInteger)fetchTagTxPower:(NSInteger)txPower {
+    if (txPower == -20) {
+        return 0;
+    }
+    if (txPower == -16) {
+        return 1;
+    }
+    if (txPower == -12) {
+        return 2;
+    }
+    if (txPower == -8) {
+        return 3;
+    }
+    if (txPower == -4) {
+        return 4;
+    }
+    if (txPower == 0) {
+        return 5;
+    }
+    if (txPower == 3) {
+        return 6;
+    }
+    if (txPower == 4) {
+        return 7;
+    }
+    if (txPower == 6) {
         return 8;
     }
     return 0;
