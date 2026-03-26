@@ -68,6 +68,7 @@ MKScannerImportServerControllerDelegate>
 - (instancetype)initWithProtocol:(id<MKScannerMqttServerProtocol>)protocol {
     if (self = [super init]) {
         _protocol = protocol;
+        [self setupBlock];
     }
     return self;
 }
