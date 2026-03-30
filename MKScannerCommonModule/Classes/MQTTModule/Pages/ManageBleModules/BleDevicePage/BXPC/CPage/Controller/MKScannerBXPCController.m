@@ -314,7 +314,7 @@ MKScannerButtonFirmwareCellDelegate>
 
 - (void)updateStatusDatas {
     MKNormalTextCellModel *cellModel1 = self.section2List[3];
-    cellModel1.rightMsg = [NSString stringWithFormat:@"%@%@",self.bxpStatusDic[@"data"][@"battery_level"],@"mV"];
+    cellModel1.rightMsg = [NSString stringWithFormat:@"%@%@",self.bxpStatusDic[@"data"][@"battery_level"],@"%"];
     
     [self.tableView reloadData];
 }
@@ -409,7 +409,7 @@ MKScannerButtonFirmwareCellDelegate>
     [self.section2List addObject:cellModel3];
     
     MKNormalTextCellModel *cellModel4 = [[MKNormalTextCellModel alloc] init];
-    cellModel4.leftMsg = @"Battery voltage";
+    cellModel4.leftMsg = @"Battery level";
     cellModel4.rightMsg = @"";
     [self.section2List addObject:cellModel4];
     
