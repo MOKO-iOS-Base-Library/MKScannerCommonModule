@@ -1,6 +1,6 @@
 {
   "name": "MKScannerCommonModule",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "summary": "Common scanner module for BLE and MQTT device management",
   "description": "MKScannerCommonModule provides a comprehensive set of reusable components for scanning,\nmanaging, and configuring BLE and MQTT devices. It includes filter pages, device info pages,\nnearby WiFi scanning, and various BXP device management features.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git",
-    "tag": "0.0.13"
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "14.0"

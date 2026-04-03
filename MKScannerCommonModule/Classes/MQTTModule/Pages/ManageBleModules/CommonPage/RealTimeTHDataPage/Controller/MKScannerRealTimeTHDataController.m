@@ -152,7 +152,7 @@ MKScannerBXPButtonAccHeaderViewDelegate>
     [self.headerView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10.0);
         make.right.mas_equalTo(-10.0);
-        make.top.mas_equalTo(self.view.mas_safeAreaLayoutGuideTop).mas_offset(10.f);
+        make.top.equalTo(self.view).offset(kTopBarHeight).mas_offset(10.f);
         make.height.mas_equalTo(100.f);
     }];
     [self.view addSubview:self.textView];
@@ -160,7 +160,7 @@ MKScannerBXPButtonAccHeaderViewDelegate>
         make.left.mas_equalTo(10.0);
         make.right.mas_equalTo(-10.0);
         make.top.mas_equalTo(self.headerView.mas_bottom).mas_offset(5.f);
-        make.bottom.mas_equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+        make.bottom.equalTo(self.view).offset(-kSafeAreaHeight);
     }];
 }
 
