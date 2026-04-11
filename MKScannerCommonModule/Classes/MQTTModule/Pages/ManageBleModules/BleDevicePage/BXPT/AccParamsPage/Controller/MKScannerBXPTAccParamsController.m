@@ -243,7 +243,7 @@ MKTextFieldCellDelegate>
 - (void)loadSubViews {
     self.defaultTitle = @"Accelerometer parameters";
     [self.rightButton setImage:LOADICON(@"MKScannerCommonModule", @"MKScannerBXPTAccParamsController", @"mk_scanner_saveIcon.png") forState:UIControlStateNormal];
-    self.titleLabel.font = MKFont(15.f);
+    [self setNavTitleFont:MKFont(15.f)];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);

@@ -13,7 +13,6 @@
 
 @interface MKBaseViewController ()<UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIButton *leftButton;
 @property (nonatomic, strong) UIButton *rightButton;
 @property (nonatomic, strong) WRCustomNavigationBar *customNavBar;
@@ -84,13 +83,22 @@
     // 子类重写
 }
 
+#pragma mark - Public Method
+- (void)setNavTitleFont:(UIFont *)font {
+    self.customNavBar.titleLabelFont = font;
+}
+
+- (void)setNavTitleColor:(UIColor *)color {
+    self.customNavBar.titleLabelColor = color;
+}
+
 #pragma mark - Custom Method
 - (void)setupCustomNavigationBar {
     // 创建自定义导航栏
     self.customNavBar = [WRCustomNavigationBar CustomNavigationBar];
     self.customNavBar.barBackgroundColor = self.navBarBackgroundColor ?: NAVBAR_COLOR_MACROS;
     self.customNavBar.titleLabelColor = COLOR_WHITE_MACROS;
-    self.customNavBar.titleLabelFont = MKFont(20);
+    self.customNavBar.titleLabelFont = MKFont(18.f);
     
     // 设置标题
     [self updateTitle];
@@ -216,17 +224,6 @@
         _rightButton.backgroundColor = [UIColor clearColor];
     }
     return _rightButton;
-}
-
-- (UILabel *)titleLabel {
-    if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = MKFont(20);
-        _titleLabel.textColor = COLOR_WHITE_MACROS;
-        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.backgroundColor = [UIColor clearColor];
-    }
-    return _titleLabel;
 }
 
 @end

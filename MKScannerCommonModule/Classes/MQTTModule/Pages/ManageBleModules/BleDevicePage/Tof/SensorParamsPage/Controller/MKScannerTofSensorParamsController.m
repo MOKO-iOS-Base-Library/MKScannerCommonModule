@@ -232,7 +232,7 @@ MKTextButtonCellDelegate>
 - (void)loadSubViews {
     self.defaultTitle = @"TOF sensor paramters";
     [self.rightButton setImage:LOADICON(@"MKScannerCommonModule", @"MKScannerTofSensorParamsController", @"mk_scanner_saveIcon.png") forState:UIControlStateNormal];
-    self.titleLabel.font = MKFont(15.f);
+    [self setNavTitleFont:MKFont(15.f)];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);

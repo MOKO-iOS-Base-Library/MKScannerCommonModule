@@ -391,7 +391,7 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
 #pragma mark - UI
 - (void)loadSubViews {
     self.defaultTitle = @"Advertisement parameters";
-    self.titleLabel.font = MKFont(15.f);
+    [self setNavTitleFont:MKFont(15.f)];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);
