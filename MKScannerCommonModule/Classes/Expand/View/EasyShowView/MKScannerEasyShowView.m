@@ -41,7 +41,7 @@
         [self.refreshIcon mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(self.msgLabel.mas_left).mas_offset(-2.f);
             make.width.mas_equalTo(20.f);
-            make.bottom.mas_equalTo(-5.f);
+            make.centerY.mas_equalTo(self.mas_centerY).mas_offset(kStatusBarHeight);
             make.height.mas_equalTo(20.f);
         }];
         [self.msgLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -55,7 +55,7 @@
     [self.msgLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(2.f);
         make.right.mas_equalTo(-2.f);
-        make.bottom.mas_equalTo(-5.f);
+        make.centerY.mas_equalTo(self.mas_centerY).mas_offset(kStatusBarHeight);
         make.height.mas_equalTo(MKFont(18.f).lineHeight);
     }];
 }
