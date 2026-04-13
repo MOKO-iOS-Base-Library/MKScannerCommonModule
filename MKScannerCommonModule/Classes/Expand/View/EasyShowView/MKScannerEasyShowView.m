@@ -38,26 +38,29 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     if (self.animated) {
-        [self.refreshIcon mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(self.msgLabel.mas_left).mas_offset(-2.f);
-            make.width.mas_equalTo(20.f);
-            make.centerY.mas_equalTo(self.mas_centerY).mas_offset(kStatusBarHeight);
-            make.height.mas_equalTo(20.f);
-        }];
+            [self.refreshIcon mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.right.mas_equalTo(self.msgLabel.mas_left).mas_offset(-2.f);
+                make.width.mas_equalTo(20.f);
+                // 相对于导航栏内部居中，而不是整个视图居中
+                make.centerY.mas_equalTo(self.mas_top).mas_offset(kStatusBarHeight + kNavigationBarHeight / 2.0);
+                make.height.mas_equalTo(20.f);
+            }];
+            [self.msgLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.centerX.mas_equalTo(self.mas_centerX);
+                make.width.mas_equalTo(120.f);
+                make.centerY.mas_equalTo(self.refreshIcon.mas_centerY);
+                make.height.mas_equalTo(MKFont(18.f).lineHeight);
+            }];
+            return;
+        }
+        
         [self.msgLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(self.mas_centerX);
-            make.width.mas_equalTo(120.f);
-            make.centerY.mas_equalTo(self.refreshIcon.mas_centerY);
+            make.left.mas_equalTo(2.f);
+            make.right.mas_equalTo(-2.f);
+            // 相对于导航栏内部居中
+            make.centerY.mas_equalTo(self.mas_top).mas_offset(kStatusBarHeight + kNavigationBarHeight / 2.0);
             make.height.mas_equalTo(MKFont(18.f).lineHeight);
         }];
-        return;
-    }
-    [self.msgLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(2.f);
-        make.right.mas_equalTo(-2.f);
-        make.centerY.mas_equalTo(self.mas_centerY).mas_offset(kStatusBarHeight);
-        make.height.mas_equalTo(MKFont(18.f).lineHeight);
-    }];
 }
 
 #pragma mark - public method
