@@ -105,7 +105,7 @@
     [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(30.f);
         make.right.mas_equalTo(-30.f);
-        make.top.equalTo(self.view).offset(kTopBarHeight).mas_offset(30.f);
+        make.top.equalTo(self.view).offset(kTopBarHeight + 30.f);
         make.height.mas_equalTo(30.f);
     }];
     [self.view addSubview:self.noteLabel];

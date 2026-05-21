@@ -169,7 +169,7 @@ MKScannerHistoricalTHDataHeaderViewDelegate>
     [self.headerView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10.0);
         make.right.mas_equalTo(-10.0);
-        make.top.equalTo(self.view).offset(kTopBarHeight).mas_offset(10.f);
+        make.top.equalTo(self.view).offset(kTopBarHeight + 10.f);
         make.height.mas_equalTo(100.f);
     }];
     [self.view addSubview:self.textView];
