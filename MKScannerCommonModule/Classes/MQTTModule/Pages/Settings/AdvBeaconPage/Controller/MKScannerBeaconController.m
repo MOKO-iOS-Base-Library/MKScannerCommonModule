@@ -102,7 +102,7 @@ MKNormalSliderCellDelegate>
         return self.section1List.count;
     }
     if (section == 2) {
-        return (self.protocol.isV2 ? self.section2List.count : 0);
+        return self.section2List.count;
     }
     if (section == 3) {
         return self.section3List.count;

@@ -36,7 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign)NSInteger txPower;
 
-/// V2版本固件支持
 @property (nonatomic, assign)NSInteger rssi1m;
 
 /// V2版本固件支持
