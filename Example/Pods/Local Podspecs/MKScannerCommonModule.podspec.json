@@ -1,6 +1,6 @@
 {
   "name": "MKScannerCommonModule",
-  "version": "0.1.1",
+  "version": "0.1.8",
   "summary": "Common scanner module for BLE and MQTT device management",
   "description": "MKScannerCommonModule provides a comprehensive set of reusable components for scanning,\nmanaging, and configuring BLE and MQTT devices. It includes filter pages, device info pages,\nnearby WiFi scanning, and various BXP device management features.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKScannerCommonModule.git",
-    "tag": "0.1.1"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "14.0"
@@ -22,6 +22,11 @@
     "MKScannerCommonModule": [
       "MKScannerCommonModule/Assets/*.png"
     ]
+  },
+  "public_header_files": "MKScannerCommonModule/Classes/**/*.h",
+  "user_target_xcconfig": {
+    "USER_HEADER_SEARCH_PATHS": "$(PODS_ROOT)/MKScannerCommonModule/MKScannerCommonModule/Classes",
+    "ALWAYS_SEARCH_USER_PATHS": "YES"
   },
   "subspecs": [
     {
@@ -356,6 +361,24 @@
             {
               "name": "Filter",
               "subspecs": [
+                {
+                  "name": "DataParsingSettingPage",
+                  "subspecs": [
+                    {
+                      "name": "Protocol",
+                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/DataParsingSettingPage/Protocol/**"
+                    },
+                    {
+                      "name": "Controller",
+                      "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/DataParsingSettingPage/Controller/**",
+                      "dependencies": {
+                        "MKScannerCommonModule/MQTTModule/Pages/Filter/DataParsingSettingPage/Protocol": [
+
+                        ]
+                      }
+                    }
+                  ]
+                },
                 {
                   "name": "DataUploadIntervalPage",
                   "subspecs": [
@@ -974,6 +997,10 @@
                           "name": "BXPButton",
                           "subspecs": [
                             {
+                              "name": "View",
+                              "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/View/**"
+                            },
+                            {
                               "name": "Model",
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Model/**"
                             },
@@ -991,6 +1018,9 @@
                               "source_files": "MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Controller/**",
                               "dependencies": {
                                 "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol": [
+
+                                ],
+                                "MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/View": [
 
                                 ]
                               }

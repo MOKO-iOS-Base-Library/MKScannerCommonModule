@@ -1,6 +1,5 @@
 
 #import "MKScannerButtonDfuV2Protocol.h"
-#import "MKScannerButtonDfuV1Protocol.h"
 #import "MKScannerRemoteReminderProtocol.h"
 #import "MKScannerAccDataProtocol.h"
 #import "MKScannerBXPCAdvParamsProtocol.h"
@@ -11,8 +10,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MKScannerBXPButtonProtocol <NSObject>
 
-@property (nonatomic, assign)BOOL isV2;
-
 /// 对于一些新的设备，支持电池百分比和电池电量两种模式
 @property (nonatomic, assign)BOOL supportBatteryMode;
 
@@ -22,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 设备断开连接
 @property (nonatomic, copy)void (^receiveDisconnectBlock)(void);
-
-- (id <MKScannerButtonDfuV1Protocol>)dfuProtocol1;
 
 - (id <MKScannerButtonDfuV2Protocol>)dfuProtocol2;
 

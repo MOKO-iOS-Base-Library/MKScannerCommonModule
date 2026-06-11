@@ -266,7 +266,7 @@
         _unitLabel.textColor = DEFAULT_TEXT_COLOR;
         _unitLabel.textAlignment = NSTextAlignmentRight;
         _unitLabel.font = MKFont(12.f);
-        _unitLabel.text = @"x 20ms";
+        _unitLabel.text = @"x 100ms";
     }
     return _unitLabel;
 }

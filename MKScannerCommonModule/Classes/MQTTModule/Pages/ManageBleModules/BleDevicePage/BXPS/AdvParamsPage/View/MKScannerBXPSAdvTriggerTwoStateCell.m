@@ -301,7 +301,7 @@
         _beforeUnitLabel.textColor = DEFAULT_TEXT_COLOR;
         _beforeUnitLabel.textAlignment = NSTextAlignmentRight;
         _beforeUnitLabel.font = MKFont(12.f);
-        _beforeUnitLabel.text = @"x 20ms";
+        _beforeUnitLabel.text = @"x 100ms";
     }
     return _beforeUnitLabel;
 }
@@ -352,7 +352,7 @@
         _afterUnitLabel.textColor = DEFAULT_TEXT_COLOR;
         _afterUnitLabel.textAlignment = NSTextAlignmentRight;
         _afterUnitLabel.font = MKFont(12.f);
-        _afterUnitLabel.text = @"x 20ms";
+        _afterUnitLabel.text = @"x 100ms";
     }
     return _afterUnitLabel;
 }

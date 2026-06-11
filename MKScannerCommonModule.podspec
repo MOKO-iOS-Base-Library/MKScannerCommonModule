@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKScannerCommonModule'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Common scanner module for BLE and MQTT device management'
 
   s.description      = <<-DESC
@@ -26,6 +26,15 @@ Pod::Spec.new do |s|
   
   s.resource_bundles = {
     'MKScannerCommonModule' => ['MKScannerCommonModule/Assets/*.png']
+  }
+  
+  # 1. 将所有头文件标记为 public（生成到 Headers 目录）
+  s.public_header_files = 'MKScannerCommonModule/Classes/**/*.h'
+  
+  # 2. 设置用户头文件搜索路径（支持双引号导入）
+  s.user_target_xcconfig = {
+    'USER_HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/MKScannerCommonModule/MKScannerCommonModule/Classes',
+    'ALWAYS_SEARCH_USER_PATHS' => 'YES'
   }
   
   # ==========================================================
@@ -288,6 +297,18 @@ Pod::Spec.new do |s|
       # 过滤相关页面
       # --------------------------------------------------------
       sss.subspec 'Filter' do |ssss|
+        
+        # 数据解析标志位配置页面
+        ssss.subspec 'DataParsingSettingPage' do |sssss|
+          sssss.subspec 'Protocol' do |ssssss|
+            ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/DataParsingSettingPage/Protocol/**'
+          end
+          
+          sssss.subspec 'Controller' do |ssssss|
+            ssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/Filter/DataParsingSettingPage/Controller/**'
+            ssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/Filter/DataParsingSettingPage/Protocol'
+          end
+        end
         
         # 数据上传间隔页面
         ssss.subspec 'DataUploadIntervalPage' do |sssss|
@@ -686,6 +707,9 @@ Pod::Spec.new do |s|
           # BXPBD特定页面
           sssss.subspec 'BXPBD' do |ssssss|
             ssssss.subspec 'BXPButton' do |sssssss|
+		sssssss.subspec 'View' do |ssssssss|
+                ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/View/**'
+              end
               sssssss.subspec 'Model' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Model/**'
               end
@@ -698,6 +722,7 @@ Pod::Spec.new do |s|
               sssssss.subspec 'Controller' do |ssssssss|
                 ssssssss.source_files = 'MKScannerCommonModule/Classes/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Controller/**'
                 ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/Protocol'
+		ssssssss.dependency 'MKScannerCommonModule/MQTTModule/Pages/ManageBleModules/BleDevicePage/BXPBD/BXPButton/View'
               end
             end
           end

@@ -105,7 +105,7 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
     NSDictionary *param = @{
         @"channel":@(index),
         @"channelType":@(0),
-        @"advInterval":@([interval integerValue] * 20),
+        @"advInterval":@([interval integerValue] * 100),
         @"txPower":@(txPower)
     };
     @weakify(self);
@@ -150,7 +150,7 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
     NSDictionary *param = @{
         @"channel":@(index),
         @"channelType":@(1),
-        @"advInterval":@([interval integerValue] * 20),
+        @"advInterval":@([interval integerValue] * 100),
         @"txPower":@(txPower)
     };
     @weakify(self);
@@ -203,9 +203,9 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
     NSDictionary *param = @{
         @"channel":@(index),
         @"channelType":@(2),
-        @"afterAdvInterval":@([afterInterval integerValue] * 20),
+        @"afterAdvInterval":@([afterInterval integerValue] * 100),
         @"afterTxPower":@(afterTxPower),
-        @"beforeAdvInterval":@([beforeInterval integerValue] * 20),
+        @"beforeAdvInterval":@([beforeInterval integerValue] * 100),
         @"beforeTxPower":@(beforeTxPower)
     };
     @weakify(self);
@@ -305,7 +305,7 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
                 NSDictionary *normalAdv = dic[@"normal_adv"];
                 
                 cellModel.slotType = [self loadAdvType:[normalAdv[@"adv_type"] integerValue]];
-                cellModel.advInterval = [NSString stringWithFormat:@"%ld",(long)([normalAdv[@"adv_interval"] integerValue] / 20)];
+                cellModel.advInterval = [NSString stringWithFormat:@"%ld",(long)([normalAdv[@"adv_interval"] integerValue] / 100)];
                 cellModel.txPower = [self fetchTxPower:[normalAdv[@"tx_power"] integerValue]];
                 [self.dataList addObject:cellModel];
             }else if (channelType == 1) {
@@ -315,7 +315,7 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
                 cellModel.slotIndex = channel;
                                 
                 cellModel.slotType = [self loadAdvType:[afterAdv[@"adv_type"] integerValue]];
-                cellModel.advInterval = [NSString stringWithFormat:@"%ld",(long)([afterAdv[@"adv_interval"] integerValue] / 20)];
+                cellModel.advInterval = [NSString stringWithFormat:@"%ld",(long)([afterAdv[@"adv_interval"] integerValue] / 100)];
                 cellModel.txPower = [self fetchTxPower:[afterAdv[@"tx_power"] integerValue]];
                 [self.dataList addObject:cellModel];
             }else if (channelType == 2) {
@@ -325,10 +325,10 @@ MKScannerBXPSAdvTriggerTwoStateCellDelegate>
                 MKScannerBXPSAdvTriggerTwoStateCellModel *cellModel = [[MKScannerBXPSAdvTriggerTwoStateCellModel alloc] init];
                 cellModel.slotIndex = channel;
                 cellModel.beforeSlotType = [self loadAdvType:[beforeAdv[@"adv_type"] integerValue]];
-                cellModel.beforeTriggerInterval = [NSString stringWithFormat:@"%ld",(long)([beforeAdv[@"adv_interval"] integerValue] / 20)];
+                cellModel.beforeTriggerInterval = [NSString stringWithFormat:@"%ld",(long)([beforeAdv[@"adv_interval"] integerValue] / 100)];
                 cellModel.beforeTriggerTxPower = [self fetchTxPower:[beforeAdv[@"tx_power"] integerValue]];
                 cellModel.afterSlotType = [self loadAdvType:[afterAdv[@"adv_type"] integerValue]];
-                cellModel.afterTriggerInterval = [NSString stringWithFormat:@"%ld",(long)([afterAdv[@"adv_interval"] integerValue] / 20)];
+                cellModel.afterTriggerInterval = [NSString stringWithFormat:@"%ld",(long)([afterAdv[@"adv_interval"] integerValue] / 100)];
                 cellModel.afterTriggerTxPower = [self fetchTxPower:[afterAdv[@"tx_power"] integerValue]];
                 [self.dataList addObject:cellModel];
             }
