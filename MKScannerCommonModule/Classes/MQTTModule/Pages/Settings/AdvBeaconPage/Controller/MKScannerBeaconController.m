@@ -102,7 +102,7 @@ MKNormalSliderCellDelegate>
         return self.section1List.count;
     }
     if (section == 2) {
-        return self.section2List.count;
+        return (self.protocol.supportRssi1m ? self.section2List.count : 0);
     }
     if (section == 3) {
         return self.section3List.count;
@@ -111,7 +111,7 @@ MKNormalSliderCellDelegate>
         return self.section4List.count;
     }
     if (section == 5) {
-        return (self.protocol.isV2 ? self.section5List.count : 0);
+        return (self.protocol.supportConnectable ? self.section5List.count : 0);
     }
     return 0;
 }

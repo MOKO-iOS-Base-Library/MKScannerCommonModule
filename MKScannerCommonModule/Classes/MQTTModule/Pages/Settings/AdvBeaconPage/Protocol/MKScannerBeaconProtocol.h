@@ -3,8 +3,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol MKScannerBeaconProtocol <NSObject>
 
-/// 是否是V2版本固件
-@property (nonatomic, assign)BOOL isV2;
+/// 是否支持connectable功能
+@property (nonatomic, assign)BOOL supportConnectable;
+
+/// 是否支持rssi1m功能
+@property (nonatomic, assign)BOOL supportRssi1m;
 
 @property (nonatomic, assign)BOOL advertise;
 
@@ -38,7 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)NSInteger rssi1m;
 
-/// V2版本固件支持
 @property (nonatomic, assign)BOOL connectable;
 
 - (void)readDataWithSucBlock:(void (^)(void))sucBlock
