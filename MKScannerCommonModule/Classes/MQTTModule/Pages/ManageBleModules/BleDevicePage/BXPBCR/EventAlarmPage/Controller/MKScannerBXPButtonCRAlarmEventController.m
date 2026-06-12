@@ -50,6 +50,7 @@ MKScannerBXPButtonCRAlarmEventHeaderDelegate>
 - (instancetype)initWithProtocol:(id<MKScannerBXPButtonCRAlarmEventProtocol>)protocol {
     if (self = [super init]) {
         _protocol = protocol;
+        [self setupBlock];
     }
     return self;
 }
