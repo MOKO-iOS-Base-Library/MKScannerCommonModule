@@ -124,7 +124,7 @@ MKTextFieldCellDelegate>
         self.protocol.rule = dataListIndex;
         MKTextButtonCellModel *cellModel = self.section0List[0];
         cellModel.dataListIndex = dataListIndex;
-        [self.tableView mk_reloadSection:1 withRowAnimation:UITableViewRowAnimationNone];
+        [self.tableView mk_reloadSection:2 withRowAnimation:UITableViewRowAnimationNone];
         return;
     }
     if (index == 1) {
