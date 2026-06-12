@@ -81,6 +81,9 @@ MKScannerHistoricalTHDataHeaderViewDelegate>
 #pragma mark - MKScannerHistoricalTHDataHeaderViewDelegate
 - (void)mk_scanner_historicalHTDataHeaderView_syncButtonPressed:(BOOL)isOn {
     [[MKHudManager share] showHUDWithTitle:@"Config..." inView:self.view isPenetration:NO];
+    if (isOn) {
+        self.textView.text = @"";
+    }
     @weakify(self);
     [self.protocol notifyHistoricalHTData:isOn
                                  sucBlock:^{
