@@ -84,7 +84,7 @@ MKTextFieldCellDelegate>
         return self.section0List.count;
     }
     if (section == 1) {
-        return (self.protocol.supportStrategy == 0 ? 0 : self.section1List.count);
+        return (self.protocol.supportStrategy ? self.section1List.count : 0);
     }
     if (section == 2) {
         return (self.protocol.rule == 0 ? 0 : self.section2List.count);
@@ -204,7 +204,7 @@ MKTextFieldCellDelegate>
     cellModel.index = 1;
     cellModel.msg = @"Filter strategy";
     cellModel.dataList = @[@"Strategy1",@"Strategy2"];
-    cellModel.dataListIndex = self.protocol.rule;
+    cellModel.dataListIndex = self.protocol.strategy;
     [self.section1List addObject:cellModel];
 }
 

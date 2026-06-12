@@ -366,6 +366,7 @@ MKNormalSliderCellDelegate>
 #pragma mark - UI
 - (void)loadSubViews {
     self.defaultTitle = @"Advertisement Settings";
+    [self setNavTitleFont:MKFont(15.f)];
     [self.rightButton setImage:LOADICON(@"MKScannerCommonModule", @"MKScannerBeaconController", @"mk_scanner_saveIcon.png") forState:UIControlStateNormal];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
