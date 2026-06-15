@@ -295,9 +295,9 @@ MKTextButtonCellDelegate>
         
         NSDictionary *tempDic = @{
             @"dataType":(ValidStr(cellModel.dataType) ? cellModel.dataType : @"00"),
-            @"minIndex":cellModel.minIndex,
-            @"maxIndex":cellModel.maxIndex,
-            @"rawData":cellModel.rawData,
+            @"minIndex":SafeStr(cellModel.minIndex),
+            @"maxIndex":SafeStr(cellModel.maxIndex),
+            @"rawData":SafeStr(cellModel.rawData),
         };
         if (![self validRawDataParams:tempDic]) {
             [self.view showCentralToast:@"Filter by Raw Adv Data Params Error"];
