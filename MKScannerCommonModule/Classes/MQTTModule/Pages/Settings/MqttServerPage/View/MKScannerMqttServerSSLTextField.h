@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <MKCustomUIModule/MKTextField.h>
+#import "MKTextField.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

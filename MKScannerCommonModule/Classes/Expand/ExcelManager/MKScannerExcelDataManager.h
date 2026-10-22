@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <MKScannerCommonModule/MKScannerExcelProtocol.h>
+#import "MKScannerExcelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
