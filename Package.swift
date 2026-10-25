@@ -31,8 +31,9 @@ let package = Package(
             ],
             sources: ["Classes"],
             resources: [.process("Assets")],
-            publicHeadersPath: "Classes",
+            publicHeadersPath: "Classes/PublicHeaders",
             cSettings: [
+                .headerSearchPath("Classes/PublicHeaders"),
                 .headerSearchPath("Classes/BleModule"),
                 .headerSearchPath("Classes/BleModule/BaseController"),
                 .headerSearchPath("Classes/BleModule/Pages"),

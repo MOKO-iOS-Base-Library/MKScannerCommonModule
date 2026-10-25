@@ -1,2 +1,0 @@
-// Forwarding header for SPM public access
-#import "BleModule/Pages/DeviceInfoPage/Model/MKScannerBleDeviceInfoModel.h"
