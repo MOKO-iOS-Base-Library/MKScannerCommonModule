@@ -28,6 +28,7 @@ let package = Package(
                 "Classes/Expand/ExcelManager/libxlsxwriter",
                 "Classes/Expand/ExcelManager/SSZipArchive",
                 "Classes/Expand/View/MKGWFilterCell",
+                "Classes/Vendor/MLInputDodger",
             ],
             sources: ["Classes"],
             resources: [.process("Assets")],
