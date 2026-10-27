@@ -13,8 +13,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git", from: "2.2.14"),
-        .package(url: "https://github.com/MOKO-iOS-Base-Library/MKCustomUIModule.git", from: "2.1.14"),
+        .package(url: "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git", from: "2.2.21"),
+        .package(url: "https://github.com/MOKO-iOS-Base-Library/MKCustomUIModule.git", from: "2.1.17"),
     ],
     targets: [
         .target(
@@ -28,7 +28,6 @@ let package = Package(
                 "Classes/Expand/ExcelManager/libxlsxwriter",
                 "Classes/Expand/ExcelManager/SSZipArchive",
                 "Classes/Expand/View/MKGWFilterCell",
-                "Classes/Vendor/MLInputDodger",
             ],
             sources: ["Classes"],
             resources: [.process("Assets")],
@@ -302,13 +301,6 @@ let package = Package(
                 .headerSearchPath("Classes/MQTTModule/Pages/Settings/SystemTimePage/Controller"),
                 .headerSearchPath("Classes/MQTTModule/Pages/Settings/SystemTimePage/Protocol"),
                 .headerSearchPath("Classes/MQTTModule/Pages/Settings/SystemTimePage/View"),
-                .headerSearchPath("Classes/Vendor"),
-                .headerSearchPath("Classes/Vendor/MLInputDodger"),
-                .headerSearchPath("Classes/Expand/ExcelManager/SSZipArchive"),
-                .headerSearchPath("Classes/Expand/ExcelManager/SSZipArchive/minizip"),
-                .headerSearchPath("Classes/Expand/ExcelManager/libxlsxwriter"),
-                .headerSearchPath("Classes/Expand/ExcelManager/libxlsxwriter/include"),
-                .headerSearchPath("Classes/Expand/ExcelManager/libxlsxwriter/third_party"),
             ],
             linkerSettings: [
                 .linkedFramework("UIKit"),

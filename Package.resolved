@@ -1,13 +1,13 @@
 {
-  "originHash" : "ef251314ff10c5f7459f61a4c184428274fa740378add245607b1a22120653db",
+  "originHash" : "911076fafde9591a5c986140952b53f434d4f054f864582f75ecd98e0598ad3a",
   "pins" : [
     {
       "identity" : "mkbasemodulelibrary",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git",
       "state" : {
-        "revision" : "48bdae2d047c0e4252e41df742ef0706aceaec96",
-        "version" : "2.2.14"
+        "revision" : "04ba6142ef727462a7c38d227a85034844da5b77",
+        "version" : "2.2.21"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MOKO-iOS-Base-Library/MKCustomUIModule.git",
       "state" : {
-        "revision" : "3f190ee95615ddc2a7ae959717092aa641caad85",
-        "version" : "2.1.14"
+        "revision" : "8a538c60d517696899443cd8a8caecaa352878d3",
+        "version" : "2.1.17"
       }
     }
   ],
