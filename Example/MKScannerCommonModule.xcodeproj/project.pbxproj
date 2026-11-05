@@ -179,7 +179,7 @@
 				<string>7BC8B3A0ED66BCC0C5A266AE</string>
 				<dict>
 					<key>value</key>
-					<string>1F3F160B0C934501B844D66B</string>
+					<string>EA4C3A2BDCE84661B91B45B0</string>
 					<key>comment</key>
 					<string>Moko deps auto-update</string>
 				</dict>
@@ -510,7 +510,7 @@
 				<string>6003F5AC195388D20070C39A</string>
 				<dict>
 					<key>value</key>
-					<string>1F3F160B0C934501B844D66B</string>
+					<string>EA4C3A2BDCE84661B91B45B0</string>
 					<key>comment</key>
 					<string>Moko deps auto-update</string>
 				</dict>
@@ -1236,7 +1236,7 @@ echo "SUCCESS" &gt; "${SCRIPT_OUTPUT_FILE_0}"
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>1F3F160B0C934501B844D66B</key>
+		<key>EA4C3A2BDCE84661B91B45B0</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXShellScriptBuildPhase</string>
@@ -1259,7 +1259,12 @@ echo "SUCCESS" &gt; "${SCRIPT_OUTPUT_FILE_0}"
 			<key>shellPath</key>
 			<string>/bin/zsh</string>
 			<key>shellScript</key>
-			<string>#!/bin/zsh\nREPO_ROOT="$(cd "$(dirname "$PROJECT_FILE_PATH")/.." &amp;&amp; pwd)"\nif [ -f "$REPO_ROOT/.moko_deps.sh" ]; then\n    "$REPO_ROOT/.moko_deps.sh"\nfi\nexit 0</string>
+			<string>#!/bin/zsh
+REPO_ROOT="$(cd "$(dirname "$PROJECT_FILE_PATH")/.." &amp;&amp; pwd)"
+if [ -f "$REPO_ROOT/.moko_deps.sh" ]; then
+    "$REPO_ROOT/.moko_deps.sh"
+fi
+exit 0</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
